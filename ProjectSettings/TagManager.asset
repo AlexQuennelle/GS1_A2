@@ -41,3 +41,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Wall BG Tile
+    uniqueID: 2106077313
+    locked: 0
+  - name: Grass
+    uniqueID: 2087265161
+    locked: 0
+  - name: Floor
+    uniqueID: 3503281393
+    locked: 0
+  - name: Wall
+    uniqueID: 37827313
+    locked: 0
+  - name: Player
+    uniqueID: 3655024157
+    locked: 0
