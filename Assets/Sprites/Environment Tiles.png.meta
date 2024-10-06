@@ -101,7 +101,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 160
-        y: 336
+        y: 480
         width: 32
         height: 32
       alignment: 0
@@ -122,7 +122,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 336
+        y: 480
         width: 32
         height: 32
       alignment: 0
@@ -139,32 +139,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tree-type1 h1
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 336
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1574255a544d7ce4bacdc76f08702c4a
-      internalID: -1971717833
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: tree-type3 1
       rect:
         serializedVersion: 2
         x: 256
-        y: 336
+        y: 480
         width: 32
         height: 32
       alignment: 0
@@ -185,7 +164,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 288
-        y: 336
+        y: 480
         width: 32
         height: 32
       alignment: 0
@@ -206,7 +185,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 320
-        y: 336
+        y: 480
         width: 32
         height: 32
       alignment: 0
@@ -227,7 +206,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 160
-        y: 304
+        y: 448
         width: 32
         height: 32
       alignment: 0
@@ -248,7 +227,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 304
+        y: 448
         width: 32
         height: 32
       alignment: 0
@@ -269,7 +248,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 224
-        y: 304
+        y: 448
         width: 32
         height: 32
       alignment: 0
@@ -290,7 +269,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 256
-        y: 304
+        y: 448
         width: 32
         height: 32
       alignment: 0
@@ -311,7 +290,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 288
-        y: 304
+        y: 448
         width: 32
         height: 32
       alignment: 0
@@ -332,7 +311,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 320
-        y: 304
+        y: 448
         width: 32
         height: 32
       alignment: 0
@@ -353,7 +332,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 160
-        y: 272
+        y: 416
         width: 32
         height: 32
       alignment: 0
@@ -374,7 +353,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 272
+        y: 416
         width: 32
         height: 32
       alignment: 0
@@ -395,7 +374,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 224
-        y: 272
+        y: 416
         width: 32
         height: 32
       alignment: 0
@@ -416,7 +395,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 256
-        y: 272
+        y: 416
         width: 32
         height: 32
       alignment: 0
@@ -437,7 +416,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 288
-        y: 272
+        y: 416
         width: 32
         height: 32
       alignment: 0
@@ -458,7 +437,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 320
-        y: 272
+        y: 416
         width: 32
         height: 32
       alignment: 0
@@ -479,7 +458,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 160
-        y: 240
+        y: 384
         width: 32
         height: 32
       alignment: 0
@@ -500,7 +479,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 240
+        y: 384
         width: 32
         height: 32
       alignment: 0
@@ -521,7 +500,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 224
-        y: 240
+        y: 384
         width: 32
         height: 32
       alignment: 0
@@ -542,7 +521,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 256
-        y: 240
+        y: 384
         width: 32
         height: 32
       alignment: 0
@@ -563,7 +542,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 288
-        y: 240
+        y: 384
         width: 32
         height: 32
       alignment: 0
@@ -584,7 +563,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 320
-        y: 240
+        y: 384
         width: 32
         height: 32
       alignment: 0
@@ -605,7 +584,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 160
-        y: 208
+        y: 352
         width: 32
         height: 32
       alignment: 0
@@ -626,7 +605,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 208
+        y: 352
         width: 32
         height: 32
       alignment: 0
@@ -647,7 +626,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 224
-        y: 208
+        y: 352
         width: 32
         height: 32
       alignment: 0
@@ -668,7 +647,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 256
-        y: 208
+        y: 352
         width: 32
         height: 32
       alignment: 0
@@ -689,7 +668,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 288
-        y: 208
+        y: 352
         width: 32
         height: 32
       alignment: 0
@@ -710,7 +689,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 320
-        y: 208
+        y: 352
         width: 32
         height: 32
       alignment: 0
@@ -731,7 +710,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 160
-        y: 176
+        y: 320
         width: 32
         height: 32
       alignment: 0
@@ -752,7 +731,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 176
+        y: 320
         width: 32
         height: 32
       alignment: 0
@@ -773,7 +752,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 224
-        y: 176
+        y: 320
         width: 32
         height: 32
       alignment: 0
@@ -794,7 +773,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 256
-        y: 176
+        y: 320
         width: 32
         height: 32
       alignment: 0
@@ -815,7 +794,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 288
-        y: 176
+        y: 320
         width: 32
         height: 32
       alignment: 0
@@ -836,7 +815,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 320
-        y: 176
+        y: 320
         width: 32
         height: 32
       alignment: 0
@@ -857,7 +836,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 167
-        y: 119
+        y: 263
         width: 50
         height: 50
       alignment: 0
@@ -878,7 +857,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 223
-        y: 127
+        y: 271
         width: 34
         height: 34
       alignment: 0
@@ -899,7 +878,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 352
-        y: 304
+        y: 448
         width: 32
         height: 64
       alignment: 9
@@ -920,7 +899,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 352
-        y: 240
+        y: 384
         width: 32
         height: 64
       alignment: 9
@@ -932,6 +911,1287 @@ TextureImporter:
       bones: []
       spriteID: 44e31948dfa52bb419b9f28e6c673bf3
       internalID: 948991451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-type1 h1
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa9745da57179e64b812657bfd7f65fd
+      internalID: -1971717833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path1 TL
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 715f0a7aea1f4274884c7b87ded8cf40
+      internalID: -101261096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path1 TM
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1d95a576f4c98440b7163e75647e4c9
+      internalID: 709106610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path1 TR
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab9f16681a3b6cc43aef4520abd634da
+      internalID: -991491778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path2 TL
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff11a586077626e4aba908991faff13d
+      internalID: 258973448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path2 TM
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17b8d6ef6056d2448967e0a26b9417fc
+      internalID: 1547586445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path2 TR
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08c9b5a592d4ec242b6f2b262aacc2ac
+      internalID: 1900744537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path1 ML
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6619ab737cdf8b54b9684241ba3c4d42
+      internalID: -1628209187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path1 MR
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 511905a6019f9d74590cbbf03b8cec36
+      internalID: -1556922613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path2 ML
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07fdbd7a83d6abb438e1e47f7a855bc8
+      internalID: 92667464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path2 MR
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9b14956584ad504490b4e0357d7ef61
+      internalID: 1951832546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path1 BL
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c37d1d891c739b47bcd0064a59c2fe0
+      internalID: 542885072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path1 BM
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f40919b7a4d45a4698acd4d50ba7801
+      internalID: 368367894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path1 BR
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4880cc2ac61d7a408c93c909d3123ff
+      internalID: -1780914235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path2 BL
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68d025d3ed3112f40aa3ca65a66964b6
+      internalID: 1629114586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path2 BM
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d2c2129fbc9b77409b7fbc7fc720d1c
+      internalID: -846778921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path2 BR
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dd3f1d619a0b534ab4cdcf674a04306
+      internalID: -930846296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path3 TL
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e00df11fbac0efb4499ce6f112760a61
+      internalID: -413993432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path3 TM
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 247c41e68d963db4daee7bed13916b3f
+      internalID: 1360318842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path3 TR
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e7b77beece6d5a41af69c1c0681a921
+      internalID: -767145609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path3 ML
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d56c6a838660f64fa99f4fb940e3d42
+      internalID: 108747417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path3 MM
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cc328b55d82e1141974449bb4562d84
+      internalID: -792663270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path3 MR
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80020c0e869d8f1478767c877f4f85e5
+      internalID: -1049420884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path3 BL
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0758a638756460f47b71297af56db216
+      internalID: -902551485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path3 BM
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 049e8b601c5ef0e4a806c49e861a1085
+      internalID: -1276666061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path3 BR
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9df79fe7a9569a44d8014d52e75b1416
+      internalID: 1587682936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path5 TL
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6c83e7c196bead4abdf59923a1e669d
+      internalID: -1200747121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path5 TM
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de4452fb65cb94d4d94f5c1616f30758
+      internalID: -1886924905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path5 TR
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27e3f781dcade4a46be0f92f320c4bf5
+      internalID: 926806314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path5 ML
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 332f80855e6b8eb4194ff17706418d53
+      internalID: 1456029183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path5 MR
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9461cee091454304286a0d1351614c4a
+      internalID: 529084851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path5 BL
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0658c3af60e26024599f46ef1aa1ed4a
+      internalID: -1112016930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path5 BM
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 498a838cd0ac82647965f8358fba7fce
+      internalID: 626657410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path5 BR
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ff8c4ac6ceb53e45b3021fc27df1af9
+      internalID: 1419350779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path4 TL
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06372e25b3d6ab749b0ff37fc459b53c
+      internalID: -972045662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path4 TM
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1a5ff65851db7d42b7d4ef5de092347
+      internalID: -1611361805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path4 TR
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e57b401515c91fb4f9dcc6254d29139d
+      internalID: -55688976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path6 TL
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6905454b295b7c04aa75333caad72919
+      internalID: 1495527956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path6 TM
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a5642acd7bec284684e63e025e0b278
+      internalID: -579288991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path6 TR
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c59a453c99e1a5f4684a546fb2fa1fdc
+      internalID: 1673769440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path4 ML
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5ec67afc65e5e34ea4e6bbe21c460f1
+      internalID: -1866418044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path4 MR
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62899c8915ee4e54f9cfcbb0185b1c38
+      internalID: 181397309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path6 ML
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02e0ea7172232d34a97eca764819bd85
+      internalID: -951763511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path6 MM
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c2854f427192c24dbe40888fd2a488b
+      internalID: 1587384803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path6 MR
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94fcfbc782ba18a4d92b9397302a2fe7
+      internalID: -1724013033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path4 BL
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ac765d65143d134b8f7c9a0c2caa68e
+      internalID: -1417211768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path4 BM
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3da53adb696551e4685e6085d3e91a9f
+      internalID: 1145952658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path4 BR
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9f91273e96f945418574adf73609194
+      internalID: -1743508910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path6 BL
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 612ca70de1929a24a810e8c01b405b1e
+      internalID: -978394445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path6 BM
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aa889c0197f4e949941d5bb503f809e
+      internalID: -368213228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path6 BR
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14355b3d452289f4aa807c6575e36806
+      internalID: 1495218932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pathR down-end
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a518b4ef23609042a3468bb4eb208dc
+      internalID: -1824568844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pathR up-end
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d9a455c71a829b4881cb875fb2025d0
+      internalID: -2100705694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pathR solo
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cce1ba61d19c7594795c9c1d68d869b1
+      internalID: -1467268076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pathB solo
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c08a0a7b11b44f54fb70ab91c9b4c583
+      internalID: -648668798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pathR right-end
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a285dafe8fa20df44a93d4b83346c45a
+      internalID: 304983565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pathR left-end
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d2953279e34c4647bf1e4dc0b5d77e0
+      internalID: -1437571449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pathB right-end
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96ff3a22a466c97428cb405900ce84ca
+      internalID: -298370211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pathB left-end
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 672a2759aa56f654c80054ab813974e3
+      internalID: -66666960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pathB up-end
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e663a2c2de7648d4683333fc5ee667e6
+      internalID: -342061952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pathB down-end
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 093b02f40dab0c446af81c25cd79e4b3
+      internalID: -990899150
       vertices: []
       indices: 
       edges: []
@@ -955,30 +2215,48 @@ TextureImporter:
       7: 1718279070
       8: 884495477
       9: 1833708170
+      Environment Tiles_1: 1039379706
       Environment Tiles_10: 1711414598
       Environment Tiles_11: -2084990433
       Environment Tiles_12: 1725412869
       Environment Tiles_13: -2139342187
+      Environment Tiles_14: 1026218672
+      Environment Tiles_15: 364241926
+      Environment Tiles_16: 1383192284
+      Environment Tiles_17: -734801346
+      Environment Tiles_18: -2032986139
+      Environment Tiles_19: 942247066
+      Environment Tiles_2: -590157356
+      Environment Tiles_20: 1444726841
       Environment Tiles_21: -439957646
+      Environment Tiles_22: -1613887276
       Environment Tiles_23: -221722120
+      Environment Tiles_24: -1555612492
+      Environment Tiles_25: 407822438
+      Environment Tiles_26: 633980587
+      Environment Tiles_27: 1536724558
+      Environment Tiles_28: 844488278
+      Environment Tiles_29: -916818949
+      Environment Tiles_3: -1867887382
+      Environment Tiles_30: -350797543
+      Environment Tiles_31: -2058330928
       Environment Tiles_32: -1158058166
       Environment Tiles_33: 483503782
       Environment Tiles_34: -1689741914
+      Environment Tiles_35: 327913497
+      Environment Tiles_36: 181371906
+      Environment Tiles_37: 30885787
+      Environment Tiles_38: -2023904789
+      Environment Tiles_39: 302254596
+      Environment Tiles_4: -737577202
+      Environment Tiles_40: -483170972
+      Environment Tiles_41: 978152269
       Environment Tiles_42: 448727476
-      Environment Tiles_43: -1374701771
-      Environment Tiles_45: -311690076
-      Environment Tiles_46: -699662887
-      Environment Tiles_53: 988217775
-      Environment Tiles_54: -1849861286
-      Environment Tiles_55: -639937503
-      Environment Tiles_56: -1089113765
-      Environment Tiles_57: -593370587
-      Environment Tiles_64: 1966470761
-      Environment Tiles_65: 36964211
-      Environment Tiles_66: -118002453
-      Environment Tiles_67: -1451020057
+      Environment Tiles_5: -1188311824
+      Environment Tiles_6: 1522435862
       Environment Tiles_68: -475715471
       Environment Tiles_69: 966428510
+      Environment Tiles_7: -1271250360
       Environment Tiles_70: -130327671
       Environment Tiles_71: -812306280
       Environment Tiles_72: -828116395
@@ -988,10 +2266,72 @@ TextureImporter:
       Environment Tiles_76: -1735968354
       Environment Tiles_77: -1082009049
       Environment Tiles_78: -1752233637
+      Environment Tiles_8: -1179110141
+      Environment Tiles_9: -591504123
       Grass Tile: -1907659451
       Grass Tile 2: 1530688250
       Tree Seamless 1: 671144021
       Tree Seamless 2: 948991451
+      path1 BL: 988217775
+      path1 BM: -1849861286
+      path1 BR: -639937503
+      path1 ML: -1628209187
+      path1 MR: -1556922613
+      path1 TL: -1374701771
+      path1 TM: 709106610
+      path1 TR: -311690076
+      path2 BL: -1089113765
+      path2 BM: -593370587
+      path2 BR: -930846296
+      path2 ML: 92667464
+      path2 MR: 1951832546
+      path2 TL: -699662887
+      path2 TM: 1547586445
+      path2 TR: 1900744537
+      path3 BL: 36964211
+      path3 BM: -118002453
+      path3 BR: -1451020057
+      path3 ML: 108747417
+      path3 MM: -792663270
+      path3 MR: 1966470761
+      path3 TL: -413993432
+      path3 TM: 1360318842
+      path3 TR: -767145609
+      path4 BL: -1417211768
+      path4 BM: 1145952658
+      path4 BR: -1743508910
+      path4 ML: -1866418044
+      path4 MR: 181397309
+      path4 TL: -972045662
+      path4 TM: -1611361805
+      path4 TR: -55688976
+      path5 BL: -1112016930
+      path5 BM: 626657410
+      path5 BR: 1419350779
+      path5 ML: 1456029183
+      path5 MR: 529084851
+      path5 TL: -1200747121
+      path5 TM: -1886924905
+      path5 TR: 926806314
+      path6 BL: -978394445
+      path6 BM: -368213228
+      path6 BR: 1495218932
+      path6 ML: -951763511
+      path6 MM: 1587384803
+      path6 MR: -1724013033
+      path6 TL: 1495527956
+      path6 TM: -579288991
+      path6 TR: 1673769440
+      pathB down-end: -990899150
+      pathB left-end: -66666960
+      pathB right-end: -298370211
+      pathB solo: -648668798
+      pathB up-end: -342061952
+      pathR down-end: 1452881952
+      pathR left-end: -1437571449
+      pathR right-end: 304983565
+      pathR solo: -1467268076
+      pathR up-end: -2100705694
       tree-type1 1: -679423911
       tree-type1 2: -2102651790
       tree-type1 3: -1879484768
