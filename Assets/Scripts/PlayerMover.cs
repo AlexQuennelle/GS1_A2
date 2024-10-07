@@ -7,6 +7,8 @@ public class PlayerMover : MonoBehaviour
 	private float _moveSpeed = 1.0f;
 	[SerializeField]
 	private PlayerInput _playerInput;
+	[SerializeField]
+	private Animator _animator;
 	private Rigidbody2D _rb;
 	private Vector2 _inputDir;
 
@@ -20,6 +22,7 @@ public class PlayerMover : MonoBehaviour
 	private void OnDisable()
 	{
 		_playerInput.actions.FindAction("Move").performed -= HandleMove;
+		_playerInput.actions.FindAction("Move").canceled -= StopMove;
 	}
 
 	private void FixedUpdate()
@@ -33,6 +36,11 @@ public class PlayerMover : MonoBehaviour
 	private void HandleMove(InputAction.CallbackContext context)
 	{
 		_inputDir = context.ReadValue<Vector2>();
+		if (Mathf.Abs(_inputDir.x) != Mathf.Abs(_inputDir.y))
+		{
+			_animator.SetFloat("inputX", _inputDir.x);
+			_animator.SetFloat("inputY", _inputDir.y);
+		}
 	}
 
 	private void StopMove(InputAction.CallbackContext context)
