@@ -3168,6 +3168,10 @@ PrefabInstance:
       propertyPath: _animator
       value: 
       objectReference: {fileID: 1934485982}
+    - target: {fileID: 786336099347055442, guid: c9a25fad13db2884c8c7844e768b2dd2, type: 3}
+      propertyPath: _moveSpeed
+      value: 2.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
