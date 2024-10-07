@@ -122,6 +122,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _moveSpeed: 1
   _playerInput: {fileID: 7878642126818299261}
+  _animator: {fileID: 0}
 --- !u!114 &7878642126818299261
 MonoBehaviour:
   m_ObjectHideFlags: 0
