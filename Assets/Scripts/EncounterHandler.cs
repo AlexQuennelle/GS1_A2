@@ -3,10 +3,10 @@ using UnityEngine;
 
 public class EncounterHandler : MonoBehaviour
 {
-	public Action<EncounterHandler> OnEncounter;
+	public Action<EncounterHandler, EnemyBase> OnEncounter;
 
-	public void HandleEncounter()
+	public void HandleEncounter(EnemyBase baseEnemy)
 	{
-		OnEncounter?.Invoke(this);
+		OnEncounter?.Invoke(this, baseEnemy);
 	}
 }

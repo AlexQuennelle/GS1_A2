@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
 
 	[SerializeField, Header(" ")]
 	private Transform _combatArena;
+	[SerializeField]
+	private EnemyActor _enemyActor;
 
 	[SerializeField]
 	private TrackObject _cameraTracker;
@@ -27,6 +29,10 @@ public class GameManager : MonoBehaviour
 	}
 	private void OnDisable()
 	{
+		if (_encounterHandler != null)
+		{
+			_encounterHandler.OnEncounter -= PlayerEncounter;
+		}
 	}
 
 	private void Update()
@@ -43,12 +49,13 @@ public class GameManager : MonoBehaviour
 		}
 	}
 
-	public void EnterCombat()
+	public void EnterCombat(EnemyBase baseEnemy)
 	{
 		if (_gameState != GameState.Exploration) return;
 		_gameState = GameState.Combat;
 		_player.SetActive(false);
 		_combatPlayer.SetActive(true);
+		_enemyActor.Initialize(baseEnemy);
 	}
 	public void ExitCombat()
 	{
@@ -58,9 +65,9 @@ public class GameManager : MonoBehaviour
 		_combatPlayer.SetActive(false);
 	}
 
-	private void PlayerEncounter(EncounterHandler handler)
+	private void PlayerEncounter(EncounterHandler handler, EnemyBase baseEnemy)
 	{
-		EnterCombat();
+		EnterCombat(baseEnemy);
 	}
 }
 
