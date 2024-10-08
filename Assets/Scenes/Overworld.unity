@@ -184,6 +184,7 @@ GameObject:
   - component: {fileID: 231715019}
   - component: {fileID: 231715018}
   - component: {fileID: 231715021}
+  - component: {fileID: 231715022}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -309,6 +310,19 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!114 &231715022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 231715017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a3a238aba4ba054089b970f925b8105, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _offset: {x: 0, y: 0, z: -10}
 --- !u!1 &236129655
 GameObject:
   m_ObjectHideFlags: 0
@@ -486,8 +500,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f088cf9b9967504eb5a977276289458, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _player: {fileID: 0}
-  _combatArena: {fileID: 0}
+  _player: {fileID: 1137602440}
+  _combatArena: {fileID: 444590220}
+  _cameraTracker: {fileID: 231715022}
 --- !u!4 &239984652
 Transform:
   m_ObjectHideFlags: 0
@@ -667,6 +682,37 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &444590219
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 444590220}
+  m_Layer: 0
+  m_Name: CombatArena
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &444590220
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 444590219}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -50, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!213 &565615877
 Sprite:
   m_ObjectHideFlags: 0
@@ -1419,6 +1465,11 @@ Sprite:
   m_PhysicsShape: []
   m_Bones: []
   m_SpriteID: 
+--- !u!1 &1137602440 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 313127192590108819, guid: c9a25fad13db2884c8c7844e768b2dd2, type: 3}
+  m_PrefabInstance: {fileID: 2130408811}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1180526250
 GameObject:
   m_ObjectHideFlags: 0
@@ -2551,3 +2602,4 @@ SceneRoots:
   - {fileID: 2130408811}
   - {fileID: 195754217}
   - {fileID: 239984652}
+  - {fileID: 444590220}
