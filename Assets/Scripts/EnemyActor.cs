@@ -20,8 +20,15 @@ public class EnemyActor : MonoBehaviour
 	public void Initialize(EnemyBase baseEnemy)
 	{
 		_sr.sprite = baseEnemy.BaseSprite;
+		if (TryGetComponent<Health>(out Health health)) health.HP = baseEnemy.HP;
 
 		_orbSpawner.EnableSpawning();
 		_projectileSpawner.EnableSpawning();
+	}
+
+	public void DeInit()
+	{
+		_orbSpawner.DisableSpawning();
+		_projectileSpawner.DisableSpawning();
 	}
 }

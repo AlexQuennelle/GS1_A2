@@ -17,9 +17,13 @@ public class EncounterInitiator : MonoBehaviour
 
 		AttemptEncounter();
 	}
-	private void OnTiggerExit2D(Collider2D col)
+	private void OnTriggerExit2D(Collider2D col)
 	{
-		if (col.gameObject.TryGetComponent<EncounterHandler>(out EncounterHandler eh)) _handler = null;
+		if (col.gameObject.TryGetComponent<EncounterHandler>(out EncounterHandler eh))
+		{
+			_handler = null;
+			_encounterChance = 1.0f;
+		}
 	}
 
 	private void AttemptEncounter()
@@ -33,6 +37,7 @@ public class EncounterInitiator : MonoBehaviour
 		if (Random.value <= _encounterChance)
 		{
 			_handler.HandleEncounter(_spawnPool[Random.Range(0, _spawnPool.Count)]);
+			_encounterChance = 0.0f;
 		}
 	}
 }

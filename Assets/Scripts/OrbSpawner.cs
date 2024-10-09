@@ -23,6 +23,11 @@ public class OrbSpawner : MonoBehaviour
 		_timerEnd = Time.time + _spawnDelay;
 		_enabled = true;
 	}
+	public void DisableSpawning()
+	{
+		_enabled = false;
+	}
+
 	private void Update()
 	{
 		if (Time.time >= _timerEnd && _enabled)
@@ -36,6 +41,7 @@ public class OrbSpawner : MonoBehaviour
 					0.0f
 				);
 			GameObject go = GameObject.Instantiate(_orb, pos, Quaternion.identity);
+			if (go.TryGetComponent<DamageTarget>(out DamageTarget dt)) dt.Target = GetComponent<Health>();
 		}
 	}
 }

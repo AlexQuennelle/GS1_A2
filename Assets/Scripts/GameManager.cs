@@ -70,8 +70,11 @@ public class GameManager : MonoBehaviour
 	{
 		if (_gameState != GameState.Combat) return;
 		_gameState = GameState.Exploration;
-		_player.SetActive(true);
+
+		_enemyActor.DeInit();
+
 		_combatPlayer.SetActive(false);
+		_player.SetActive(true);
 	}
 
 	private void PlayerEncounter(EncounterHandler handler, EnemyBase baseEnemy)

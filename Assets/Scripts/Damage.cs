@@ -10,5 +10,6 @@ public class Damage : MonoBehaviour
 		if (!col.gameObject.TryGetComponent<Health>(out Health health)) return;
 
 		health.TakeDamage(_damage);
+		GameObject.Destroy(this.gameObject);
 	}
 }
