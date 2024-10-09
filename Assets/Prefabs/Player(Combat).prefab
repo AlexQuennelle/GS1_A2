@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 3634552250699241195}
   - component: {fileID: 4249437787628225124}
   - component: {fileID: 6768767769150552875}
+  - component: {fileID: 6145207870011967469}
   m_Layer: 0
   m_Name: Player(Combat)
   m_TagString: Untagged
@@ -181,6 +182,19 @@ MonoBehaviour:
   m_DefaultActionMap: Player(Combat)
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &6145207870011967469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2800643472303000863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d27ba74cad8a114781b3d50f93d8553, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _hp: 5
 --- !u!1 &7062460090776568994
 GameObject:
   m_ObjectHideFlags: 0
