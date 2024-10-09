@@ -8,13 +8,25 @@ public class DialogueManager : NoMonoSingleton<DialogueManager>
 
     public void Initialize()
     {
-        PlayerDialogueDatabase dialogueDatabase = Resources.Load<PlayerDialogueDatabase>("DialogueData/PlayerDialogueDatabase");
+        PlayerDialogueDatabase dialogueDatabase = Resources.Load<PlayerDialogueDatabase>("DialogueData/Dialogue");
+
         if (dialogueDatabase != null)
         {
-            foreach (var entry in dialogueDatabase.dialogues)
+            for (int i = 0; i < dialogueDatabase.keys.Length; i++)
             {
-                dialogueDictionary[entry.key] = entry.dialogueText;
+                if (i < dialogueDatabase.dialogues.Length)
+                {
+                    string key = dialogueDatabase.keys[i];
+                    string dialogueText = dialogueDatabase.dialogues[i];
+
+                    if (!string.IsNullOrEmpty(key))
+                    {
+                        dialogueDictionary[key] = dialogueText;
+                    }
+                }
             }
+
+            Debug.Log("Dialogue data successfully initialized and stored in the dictionary.");
         }
         else
         {

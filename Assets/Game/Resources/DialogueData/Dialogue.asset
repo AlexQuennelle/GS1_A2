@@ -9,11 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: PlayerDialogueDatabase
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerDialogueDatabase
+  m_Script: {fileID: 11500000, guid: 9b29f0f068a6c5948be53e4ceb9196c8, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  keys:
+  - Alpha1
   dialogues:
-  - key: Alpha1
-    dialogueText: This is test one
-  - key: Alpha2
-    dialogueText: This is test two
+  - asdfasdfas

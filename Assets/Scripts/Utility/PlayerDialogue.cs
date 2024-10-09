@@ -1,15 +1,22 @@
 using UnityEngine;
 
-[System.Serializable]
-public class PlayerDialogueEntry
-{
-    public string key;
-    [TextArea(2, 5)]
-    public string dialogueText;
-}
 
 [CreateAssetMenu(fileName = "PlayerDialogueDatabase", menuName = "Dialogue/PlayerDialogueDatabase")]
 public class PlayerDialogueDatabase : ScriptableObject
 {
-    public PlayerDialogueEntry[] dialogues;
+    public string[] keys;
+    public string[] dialogues;
+    public string GetDialogue(string key)
+    {
+        for (int i = 0; i < keys.Length; i++)
+        {
+            if (keys[i] == key)
+            {
+                return dialogues[i];
+            }
+        }
+
+        Debug.LogWarning($"Dialogue with key '{key}' not found.");
+        return null;
+    }
 }
