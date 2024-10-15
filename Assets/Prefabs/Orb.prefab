@@ -110,7 +110,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2e541f948c33d647baf0d9b7e9811f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _lifetime: 2
+  _lifetime:
+    m_Mode: 0
+    m_CurveMultiplier: 0
+    m_CurveMin:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_CurveMax:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_ConstantMin: 1
+    m_ConstantMax: 5
 --- !u!114 &7329975044673730299
 MonoBehaviour:
   m_ObjectHideFlags: 0

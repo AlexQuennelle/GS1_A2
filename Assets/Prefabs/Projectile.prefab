@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6483181345661547825}
   - component: {fileID: -2330486269731439496}
   - component: {fileID: 2475633099423183961}
+  - component: {fileID: -4811834228561545636}
   m_Layer: 8
   m_Name: Projectile
   m_TagString: Untagged
@@ -87,7 +88,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2e541f948c33d647baf0d9b7e9811f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _lifetime: 5
+  _lifetime:
+    m_Mode: 3
+    m_CurveMultiplier: 0
+    m_CurveMin:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_CurveMax:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_ConstantMin: 0
+    m_ConstantMax: 1.25
+--- !u!114 &-4811834228561545636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 475317036913520157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e638fd2c99cefb1499f5d464d3d62dae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sd: {fileID: 2475633099423183961}
+  _prefab: {fileID: 3166819934649393739, guid: d1c91d0f679f901428d66f9a5e54f4b4, type: 3}
 --- !u!1 &2732762860304123160
 GameObject:
   m_ObjectHideFlags: 0
