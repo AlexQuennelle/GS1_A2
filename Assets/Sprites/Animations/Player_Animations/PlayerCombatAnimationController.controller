@@ -7,7 +7,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Walk
+  m_Name: Run
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -135,7 +135,7 @@ BlendTree:
   m_Name: PlayerWalk
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 82c1995dee364c248a00ac1f384cb74a, type: 2}
+    m_Motion: {fileID: 7400000, guid: 3db347560046f5c4b988cb4c0020ba40, type: 2}
     m_Threshold: 0
     m_Position: {x: 0, y: -1}
     m_TimeScale: 1
@@ -143,28 +143,28 @@ BlendTree:
     m_DirectBlendParameter: inputX
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: d6f75bbecc672464e9365e34c39d8ffb, type: 2}
+    m_Motion: {fileID: 7400000, guid: a097b78b9ff51e24891ea1a3002765df, type: 2}
     m_Threshold: 0.33333334
     m_Position: {x: -1, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: Blend
+    m_DirectBlendParameter: inputX
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 219d47469cacf064e9b5f5869541b15f, type: 2}
+    m_Motion: {fileID: 7400000, guid: 4881335e484e4594d83e77cab2118943, type: 2}
     m_Threshold: 0.6666667
     m_Position: {x: 1, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: Blend
+    m_DirectBlendParameter: inputX
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 93e2189fea13cb7449dc418182f0d305, type: 2}
+    m_Motion: {fileID: 7400000, guid: b23f1d8b2fb159a4e895da51639bfdf2, type: 2}
     m_Threshold: 1
     m_Position: {x: 0, y: 1}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: Blend
+    m_DirectBlendParameter: inputX
     m_Mirror: 0
   m_BlendParameter: inputX
   m_BlendParameterY: inputY
