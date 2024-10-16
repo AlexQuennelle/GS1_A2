@@ -44,6 +44,9 @@ TagManager:
   - name: Wall BG Tile
     uniqueID: 2106077313
     locked: 0
+  - name: Path
+    uniqueID: 439982441
+    locked: 0
   - name: Grass
     uniqueID: 2087265161
     locked: 0
