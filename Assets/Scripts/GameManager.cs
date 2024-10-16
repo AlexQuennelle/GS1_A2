@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -21,11 +22,19 @@ public class GameManager : MonoBehaviour
 
 	private void OnEnable()
 	{
-		_encounterHandler = _player.GetComponent<EncounterHandler>();
-		if (_encounterHandler != null)
+		//_encounterHandler = _player.GetComponent<EncounterHandler>();
+		//if (_encounterHandler != null)
+		//{
+		//	_encounterHandler.OnEncounter += PlayerEncounter;
+		//}
+		if (_player.TryGetComponent<EncounterHandler>(out _encounterHandler))
 		{
 			_encounterHandler.OnEncounter += PlayerEncounter;
 		}
+
+		//temp
+		_enemyActor.GetComponent<Health>().OnDeath += Victory;
+		_combatPlayer.GetComponent<Health>().OnDeath += Defeat;
 	}
 	private void OnDisable()
 	{
@@ -61,14 +70,28 @@ public class GameManager : MonoBehaviour
 	{
 		if (_gameState != GameState.Combat) return;
 		_gameState = GameState.Exploration;
-		_player.SetActive(true);
+
+		_enemyActor.DeInit();
+
 		_combatPlayer.SetActive(false);
+		_player.SetActive(true);
 	}
 
 	private void PlayerEncounter(EncounterHandler handler, EnemyBase baseEnemy)
 	{
 		EnterCombat(baseEnemy);
 	}
+
+#region temp methods
+	private void Victory(Health health)
+	{
+		ExitCombat();
+	}
+	private void Defeat(Health health)
+	{
+		SceneManager.LoadScene(0);
+	}
+#endregion
 }
 
 public enum GameState

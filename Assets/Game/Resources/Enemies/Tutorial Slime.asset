@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: Tutorial Slime
   m_EditorClassIdentifier: 
   _sprite: {fileID: -1840377238, guid: c20d2e8a72f2e9849951fd97565c1752, type: 3}
+  _hp: 3
