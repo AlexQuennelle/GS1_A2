@@ -1,6 +1,10 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+///<summary>
+///Component that interfaces with the <see cref="InputSystem">Unity input system</see>.
+///Listens to input events and sends that data down to other associated scripts
+///</summary>
 public class PlayerInputHandler : MonoBehaviour
 {
 	[SerializeField]
