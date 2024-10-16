@@ -118,8 +118,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e638fd2c99cefb1499f5d464d3d62dae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sd: {fileID: 2475633099423183961}
-  _prefab: {fileID: 3166819934649393739, guid: d1c91d0f679f901428d66f9a5e54f4b4, type: 3}
+  _selfDestructor: {fileID: 0}
+  _prefab: {fileID: 7877380016152694961, guid: 89274e468f241ab4f87e21543fe83c5e, type: 3}
 --- !u!114 &4894439661550152514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -193,13 +193,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2732762860304123160}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.3, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6425470215713265722}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &614353289338780930
 SpriteRenderer:
   m_ObjectHideFlags: 0

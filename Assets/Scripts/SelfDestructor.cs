@@ -14,7 +14,7 @@ public class SelfDestructor : MonoBehaviour
 	private float _eol;
 
 	//event called immediately before the object is destroyed
-	public event Action<SelfDestructor> OnDestroy;
+	public event Action OnSelfDestruct;
 
 	//initialize the end of life time when the object is loaded
 	private void OnEnable()
@@ -31,7 +31,7 @@ public class SelfDestructor : MonoBehaviour
 	{
 		if (Time.time >= _eol)
 		{
-			OnDestroy?.Invoke(this);
+			OnSelfDestruct?.Invoke();
 			Destroy(this.gameObject);
 		}
 	}

@@ -12,7 +12,9 @@ public class EnemyActor : MonoBehaviour
 	[SerializeField]
 	private OrbSpawner _orbSpawner;
 	[SerializeField]
-	private OrbSpawner _projectileSpawner;
+	private ProjectileSpawner _projectileSpawner;
+	[SerializeField]
+	private Animator _animator;
 
 	private bool _ready = false;
 
@@ -30,7 +32,9 @@ public class EnemyActor : MonoBehaviour
 		if (TryGetComponent<Health>(out Health health)) health.HP = baseEnemy.HP;
 
 		_orbSpawner.EnableSpawning();
-		_projectileSpawner.EnableSpawning();
+		//_projectileSpawner.EnableSpawning();
+
+		_animator.runtimeAnimatorController = baseEnemy.Animator;
 	}
 
 	///<summary>
@@ -39,6 +43,8 @@ public class EnemyActor : MonoBehaviour
 	public void DeInit()
 	{
 		_orbSpawner.DisableSpawning();
-		_projectileSpawner.DisableSpawning();
+		//_projectileSpawner.DisableSpawning();
+		
+		_animator.runtimeAnimatorController = null;
 	}
 }
