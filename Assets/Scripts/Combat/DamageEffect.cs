@@ -6,7 +6,6 @@ public class DamageEffect : MonoBehaviour
 	private Health _health;
 	[SerializeField]
 	private SpriteRenderer _sr;
-	private bool _flash = false;
 	private int _flashCounter = 0;
 
 	private void OnEnable()

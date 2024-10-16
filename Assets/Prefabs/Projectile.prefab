@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: -2330486269731439496}
   - component: {fileID: 2475633099423183961}
   - component: {fileID: -4811834228561545636}
+  - component: {fileID: 4894439661550152514}
   m_Layer: 8
   m_Name: Projectile
   m_TagString: Untagged
@@ -51,7 +52,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -119,6 +120,53 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _sd: {fileID: 2475633099423183961}
   _prefab: {fileID: 3166819934649393739, guid: d1c91d0f679f901428d66f9a5e54f4b4, type: 3}
+--- !u!114 &4894439661550152514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 475317036913520157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4064eaae9d14f32448b08a71287f5a57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _velocity:
+    m_Mode: 0
+    m_CurveMultiplier: 1
+    m_CurveMin:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_CurveMax:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: -7.5202165
+        outSlope: -7.5202165
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0.14583333
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_ConstantMin: 1
+    m_ConstantMax: 9.8
 --- !u!1 &2732762860304123160
 GameObject:
   m_ObjectHideFlags: 0
