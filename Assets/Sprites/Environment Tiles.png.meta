@@ -1995,7 +1995,7 @@ TextureImporter:
         width: 42
         height: 42
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2016,7 +2016,7 @@ TextureImporter:
         width: 34
         height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2024,6 +2024,174 @@ TextureImporter:
       bones: []
       spriteID: 5a93f50abb9d7584f99fb3c50740c1df
       internalID: 1039379706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment Tiles_2
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 187
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca6888ea2d883bc4994c14cf5018ce61
+      internalID: -590157356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment Tiles_7
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 187
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ad12e037a7de464ab1fe4f85123c2e6
+      internalID: -1271250360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment Tiles_8
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 123
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a7e409de17b86245bf9535f0becbeb7
+      internalID: -1179110141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment Tiles_9
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 123
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18f99b74a8f48ef48a2ad8926510e77c
+      internalID: -591504123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment Tiles_10
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 155
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68f205b8b9a318942855882cfe85b3dd
+      internalID: 1711414598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment Tiles_11
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 155
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6640138eb6bdfdd49ae9947f4bbc4735
+      internalID: -2084990433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment Tiles_16
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 91
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e90e860d126d474f9a359c50ec76706
+      internalID: 1383192284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment Tiles_17
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 91
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 846de99e260065f489ca96cc1478f6f5
+      internalID: -734801346
       vertices: []
       indices: 
       edges: []
