@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 701b317f48e23b54fab7bd80bd183f89, type: 3}
   m_Name: Tutorial Slime
   m_EditorClassIdentifier: 
-  _sprite: {fileID: -1840377238, guid: c20d2e8a72f2e9849951fd97565c1752, type: 3}
+  _sprite: {fileID: -1329653678, guid: c748092ff00450d46b12e8c9f082d8f9, type: 3}
+  _animator: {fileID: 0}
   _hp: 3
+  _pattern: {fileID: 11400000, guid: 98f1751906f10a14f99e2d7ea5b36022, type: 2}
