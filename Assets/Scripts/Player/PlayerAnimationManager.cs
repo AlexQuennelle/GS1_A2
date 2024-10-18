@@ -1,9 +1,9 @@
 using UnityEngine;
 
 ///<summary>
-///Component that acts as an interface between <see cref="PlayerInputHandler">player input</see> and an animator.
+///Component that acts as a bridge between <see cref="PlayerInputHandler">player input</see> and an animator.
 ///</summary>
-public class PlayerAnimationInterface : MonoBehaviour
+public class PlayerAnimationManager : MonoBehaviour
 {
 	[SerializeField]
 	private Animator _animator;

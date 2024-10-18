@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 ///<summary>
-///Component that interfaces with the <see cref="InputSystem">Unity input system</see>.
+///Component that bridges the <see cref="InputSystem">Unity input system</see> and custom scritps.
 ///Listens to input events and sends that data down to other associated scripts
 ///</summary>
 public class PlayerInputHandler : MonoBehaviour
@@ -12,7 +12,7 @@ public class PlayerInputHandler : MonoBehaviour
 	[SerializeField]
 	private PlayerMover _pm;
 	[SerializeField]
-	private PlayerAnimationInterface _animation;
+	private PlayerAnimationManager _animation;
 
 	private void OnEnable()
 	{
