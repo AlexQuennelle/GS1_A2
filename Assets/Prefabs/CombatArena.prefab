@@ -354,7 +354,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6570698876343479169}
-  - component: {fileID: 2098470796202025987}
+  - component: {fileID: 24716344112821778}
   m_Layer: 0
   m_Name: ProjectileSpawner
   m_TagString: Untagged
@@ -379,7 +379,7 @@ Transform:
   - {fileID: 8742422720458562562}
   m_Father: {fileID: 6169406774010060260}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2098470796202025987
+--- !u!114 &24716344112821778
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -388,13 +388,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6479775904479610191}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 129b5a05f036d844faa34058f022d6bd, type: 3}
+  m_Script: {fileID: 11500000, guid: bd76727ef90423d4d8d62b73bfd27679, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _corner1: {fileID: 6692630458149490514}
-  _corner2: {fileID: 8742422720458562562}
-  _orb: {fileID: 475317036913520157, guid: 66dbb8e2dfbc6a64cba2850723ef83d8, type: 3}
-  _spawnDelay: 0.5
+  _projectile: {fileID: 0}
 --- !u!1 &8195031031245445547
 GameObject:
   m_ObjectHideFlags: 0
@@ -534,7 +531,7 @@ PrefabInstance:
     - target: {fileID: 2560497890332958884, guid: e26647434974abd4495d4d4a30ff8e0c, type: 3}
       propertyPath: _projectileSpawner
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 24716344112821778}
     - target: {fileID: 4498916687718087585, guid: e26647434974abd4495d4d4a30ff8e0c, type: 3}
       propertyPath: m_Layer
       value: 7

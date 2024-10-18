@@ -32,7 +32,7 @@ public class EnemyActor : MonoBehaviour
 		if (TryGetComponent<Health>(out Health health)) health.HP = baseEnemy.HP;
 
 		_orbSpawner.EnableSpawning();
-		//_projectileSpawner.EnableSpawning();
+		_projectileSpawner.Enable(baseEnemy.Pattern);
 
 		_animator.runtimeAnimatorController = baseEnemy.Animator;
 	}
