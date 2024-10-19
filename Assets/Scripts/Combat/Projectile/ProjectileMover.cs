@@ -13,6 +13,9 @@ public class ProjectileMover : MonoBehaviour
 		{
 			Debug.LogWarning($"{this.gameObject.name} doesn't have a Rigidbody2D attached.");
 		}
+	}
+	public void Move()
+	{
 		_rb.velocity = transform.up * _velocity.Evaluate(0, Random.value);
 	}
 

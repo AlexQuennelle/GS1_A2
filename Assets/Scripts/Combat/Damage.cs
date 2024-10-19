@@ -7,6 +7,7 @@ public class Damage : MonoBehaviour
 
 	private void OnTriggerEnter2D(Collider2D col)
 	{
+		Debug.Log(col.gameObject.name);
 		if (!col.gameObject.TryGetComponent<Health>(out Health health)) return;
 
 		health.TakeDamage(_damage);
