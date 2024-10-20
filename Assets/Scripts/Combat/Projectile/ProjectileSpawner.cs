@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -12,6 +11,9 @@ public class ProjectileSpawner : MonoBehaviour
 
 	private Vector2 _direction;
 	private Vector2 _p1, _p2;
+
+	[SerializeField]
+	private Transform _player;
 
 	[SerializeField]
 	private float _spawnDelay = 1.0f;
@@ -46,11 +48,8 @@ public class ProjectileSpawner : MonoBehaviour
 	{
 		GameObject go = GameObject.Instantiate(_projectile, Vector2.Lerp(_p1, _p2, Random.value), Quaternion.identity);
 		go.transform.up = _direction.normalized;
-		if (!go.TryGetComponent<ProjectileMover>(out ProjectileMover mover))
-		{
-			Debug.LogWarning($"{go.name} doesn't have a ProjectileMover component!");
-		}
-		mover.Move();
+
+		if (TryGetComponent<PointAt>(out PointAt tracker)) tracker.Target = _player;
 	}
 
 	private void CalculatePoints()

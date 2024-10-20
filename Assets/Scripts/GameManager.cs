@@ -22,26 +22,15 @@ public class GameManager : MonoBehaviour
 
 	private void OnEnable()
 	{
-		//_encounterHandler = _player.GetComponent<EncounterHandler>();
-		//if (_encounterHandler != null)
-		//{
-		//	_encounterHandler.OnEncounter += PlayerEncounter;
-		//}
-		if (_player.TryGetComponent<EncounterHandler>(out _encounterHandler))
-		{
-			_encounterHandler.OnEncounter += PlayerEncounter;
-		}
-
-		//temp
-		_enemyActor.GetComponent<Health>().OnDeath += Victory;
-		_combatPlayer.GetComponent<Health>().OnDeath += Defeat;
+		if (_player.TryGetComponent<EncounterHandler>(out _encounterHandler)) _encounterHandler.OnEncounter += PlayerEncounter;
+		if (_enemyActor.TryGetComponent<Health>(out Health enemyHealth)) enemyHealth.OnDeath += Victory;
+		if (_combatPlayer.TryGetComponent<Health>(out Health playerHealth)) playerHealth.OnDeath += Defeat;
 	}
 	private void OnDisable()
 	{
-		if (_encounterHandler != null)
-		{
-			_encounterHandler.OnEncounter -= PlayerEncounter;
-		}
+		if (_encounterHandler != null) _encounterHandler.OnEncounter -= PlayerEncounter;
+		if (_enemyActor.TryGetComponent<Health>(out Health enemyHealth)) enemyHealth.OnDeath -= Victory;
+		if (_combatPlayer.TryGetComponent<Health>(out Health playerHealth)) playerHealth.OnDeath -= Defeat;
 	}
 
 	private void Update()
@@ -77,21 +66,24 @@ public class GameManager : MonoBehaviour
 		_player.SetActive(true);
 	}
 
+	//put encounter transition here
 	private void PlayerEncounter(EncounterHandler handler, EnemyBase baseEnemy)
 	{
 		EnterCombat(baseEnemy);
 	}
 
-#region temp methods
+	#region temp methods
+	//put victory screen here
 	private void Victory(Health health)
 	{
 		ExitCombat();
 	}
+	//put game over screen here
 	private void Defeat(Health health)
 	{
 		SceneManager.LoadScene(0);
 	}
-#endregion
+	#endregion
 }
 
 public enum GameState
