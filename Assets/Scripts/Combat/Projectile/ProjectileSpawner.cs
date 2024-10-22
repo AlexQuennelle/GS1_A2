@@ -37,7 +37,7 @@ public class ProjectileSpawner : MonoBehaviour
 	{
 		if (Time.time >= _timerEnd && _enabled)
 		{
-			_timerEnd =  Time.time + _spawnDelay;
+			_timerEnd = Time.time + _spawnDelay;
 
 			CalculatePoints();
 			SpawnProjectiles();

@@ -22,6 +22,10 @@ public class EnemyMover : MonoBehaviour
 	private Vector2 _targetPos;
 	private Vector2 _startPos;
 
+	private void OnValidate()
+	{
+		_startPos = transform.position;
+	}
 	private void OnEnable()
 	{
 		_startPos = transform.position;

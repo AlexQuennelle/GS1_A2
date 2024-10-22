@@ -44,7 +44,7 @@ public class EnemyActor : MonoBehaviour
 	{
 		_orbSpawner.DisableSpawning();
 		//_projectileSpawner.DisableSpawning();
-		
+
 		_animator.runtimeAnimatorController = null;
 	}
 }

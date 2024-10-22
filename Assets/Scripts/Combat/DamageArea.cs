@@ -23,12 +23,13 @@ public class DamageArea : MonoBehaviour
 	}
 	private void FixedUpdate()
 	{
-		if(Time.time >= _tickTimer)
+		if (Time.time >= _tickTimer)
 		{
 			_tickTimer = Time.time + _tickLength;
 			_area.SetActive(true);
 		}
-		else{
+		else
+		{
 			_area.SetActive(false);
 		}
 	}
