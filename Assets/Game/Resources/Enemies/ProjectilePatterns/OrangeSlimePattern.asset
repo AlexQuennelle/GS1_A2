@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: OrangeSlimePattern
   m_EditorClassIdentifier: 
   _projectile: {fileID: 475317036913520157, guid: 540a36a4310899f41aa19e2bccd11782, type: 3}
-  _spawnDelay: 0.6
+  _spawnDelay: 0.3
   _directions:
   - {x: 0, y: -1}

@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: BlueSlimePattern
   m_EditorClassIdentifier: 
   _projectile: {fileID: 475317036913520157, guid: 9981e05d78f383c4b98dcba68f27f694, type: 3}
-  _spawnDelay: 0.4
+  _spawnDelay: 0.2
   _directions:
   - {x: 0, y: -1}

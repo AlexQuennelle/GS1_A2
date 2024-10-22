@@ -216,7 +216,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 37827313
-  m_SortingLayer: 5
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0.15625, y: 0.15625, z: 0}
@@ -4447,7 +4447,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1276023639
-  m_SortingLayer: 8
+  m_SortingLayer: 10
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -53986,7 +53986,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1276023639
-  m_SortingLayer: 8
+  m_SortingLayer: 10
   m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -106368,6 +106368,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: CombatArena
       objectReference: {fileID: 0}
+    - target: {fileID: 5676694612937976908, guid: 65423f0c358dd784182d24879a7b5b2b, type: 3}
+      propertyPath: m_Size.x
+      value: 1.03125
+      objectReference: {fileID: 0}
+    - target: {fileID: 5676694612937976908, guid: 65423f0c358dd784182d24879a7b5b2b, type: 3}
+      propertyPath: m_Size.y
+      value: 1.03125
+      objectReference: {fileID: 0}
+    - target: {fileID: 5676694612937976908, guid: 65423f0c358dd784182d24879a7b5b2b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1102832012, guid: 6831bf5c643b67c4f81fe442bf14a9c5, type: 3}
+    - target: {fileID: 5676694612937976908, guid: 65423f0c358dd784182d24879a7b5b2b, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6169406774010060260, guid: 65423f0c358dd784182d24879a7b5b2b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -50
@@ -106506,7 +106522,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 37827313
-  m_SortingLayer: 5
+  m_SortingLayer: 6
   m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -106641,6 +106657,22 @@ PrefabInstance:
     - target: {fileID: 729464766158853362, guid: c9a25fad13db2884c8c7844e768b2dd2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7153263808303948856, guid: c9a25fad13db2884c8c7844e768b2dd2, type: 3}
+      propertyPath: m_Size.x
+      value: 1.03125
+      objectReference: {fileID: 0}
+    - target: {fileID: 7153263808303948856, guid: c9a25fad13db2884c8c7844e768b2dd2, type: 3}
+      propertyPath: m_Size.y
+      value: 1.03125
+      objectReference: {fileID: 0}
+    - target: {fileID: 7153263808303948856, guid: c9a25fad13db2884c8c7844e768b2dd2, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1102832012, guid: 6831bf5c643b67c4f81fe442bf14a9c5, type: 3}
+    - target: {fileID: 7153263808303948856, guid: c9a25fad13db2884c8c7844e768b2dd2, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

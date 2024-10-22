@@ -351,7 +351,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1276023639
-  m_SortingLayer: 8
+  m_SortingLayer: 10
   m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -7758,7 +7758,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1276023639
-  m_SortingLayer: 8
+  m_SortingLayer: 10
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -107313,7 +107313,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1008050149
-  m_SortingLayer: 10
+  m_SortingLayer: 12
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -107393,6 +107393,22 @@ PrefabInstance:
     - target: {fileID: 4651175860098829983, guid: c9a25fad13db2884c8c7844e768b2dd2, type: 3}
       propertyPath: m_Offset.y
       value: -0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 7153263808303948856, guid: c9a25fad13db2884c8c7844e768b2dd2, type: 3}
+      propertyPath: m_Size.x
+      value: 1.03125
+      objectReference: {fileID: 0}
+    - target: {fileID: 7153263808303948856, guid: c9a25fad13db2884c8c7844e768b2dd2, type: 3}
+      propertyPath: m_Size.y
+      value: 1.03125
+      objectReference: {fileID: 0}
+    - target: {fileID: 7153263808303948856, guid: c9a25fad13db2884c8c7844e768b2dd2, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1102832012, guid: 6831bf5c643b67c4f81fe442bf14a9c5, type: 3}
+    - target: {fileID: 7153263808303948856, guid: c9a25fad13db2884c8c7844e768b2dd2, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7153263808303948856, guid: c9a25fad13db2884c8c7844e768b2dd2, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -107584,7 +107600,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1615113097
-  m_SortingLayer: 9
+  m_SortingLayer: 11
   m_SortingOrder: 0
   m_RenderMode: 0
   m_MeshDistribution: 0
