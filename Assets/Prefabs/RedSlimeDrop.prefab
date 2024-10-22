@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2475633099423183961}
   - component: {fileID: -4811834228561545636}
   - component: {fileID: 4894439661550152514}
+  - component: {fileID: -7157239578985381987}
   m_Layer: 8
   m_Name: RedSlimeDrop
   m_TagString: Untagged
@@ -167,6 +168,19 @@ MonoBehaviour:
       m_RotationOrder: 4
     m_ConstantMin: 1
     m_ConstantMax: 9.8
+--- !u!114 &-7157239578985381987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 475317036913520157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7243fa22bb7e5b9458802015bf5fcd23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _damage: {fileID: -2330486269731439496}
 --- !u!1 &2732762860304123160
 GameObject:
   m_ObjectHideFlags: 0

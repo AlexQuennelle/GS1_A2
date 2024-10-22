@@ -1,12 +1,10 @@
-using System.Collections.Generic;
 using UnityEngine;
 
 public class EncounterInitiator : MonoBehaviour
 {
 	[SerializeField]
-	private List<EnemyBase> _spawnPool = new List<EnemyBase>();
+	private EnemyBase _enemy;
 	[SerializeField, Range(0, 1)]
-	private float _encounterChance;
 
 	private EncounterHandler _handler;
 
@@ -22,7 +20,6 @@ public class EncounterInitiator : MonoBehaviour
 		if (col.gameObject.TryGetComponent<EncounterHandler>(out EncounterHandler eh))
 		{
 			_handler = null;
-			_encounterChance = 1.0f;
 		}
 	}
 
@@ -34,10 +31,8 @@ public class EncounterInitiator : MonoBehaviour
 			return;
 		}
 
-		if (Random.value <= _encounterChance)
-		{
-			_handler.HandleEncounter(_spawnPool[Random.Range(0, _spawnPool.Count)]);
-			_encounterChance = 0.0f;
-		}
+		_handler.HandleEncounter(_enemy);
+
+		GameObject.Destroy(this.gameObject);
 	}
 }
