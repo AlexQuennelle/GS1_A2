@@ -49,7 +49,10 @@ public class ProjectileSpawner : MonoBehaviour
 		GameObject go = GameObject.Instantiate(_projectile, Vector2.Lerp(_p1, _p2, Random.value), Quaternion.identity);
 		go.transform.up = _direction.normalized;
 
-		if (TryGetComponent<PointAt>(out PointAt tracker)) tracker.Target = _player;
+		if (go.TryGetComponent<PointAt>(out PointAt tracker))
+		{
+			tracker.Target = _player;
+		}
 	}
 
 	private void CalculatePoints()

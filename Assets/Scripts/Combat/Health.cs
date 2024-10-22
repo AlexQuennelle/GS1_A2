@@ -15,7 +15,7 @@ public class Health : MonoBehaviour
 	{
 		_hp -= dmg;
 
-		OnDamage?.Invoke(this, dmg);
+		OnDamage?.Invoke(this, _hp);
 		if (_hp <= 0)
 		{
 			_hp = 0;
