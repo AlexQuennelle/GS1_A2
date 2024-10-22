@@ -1,5 +1,6 @@
 using UnityEngine;
 using static UnityEngine.ParticleSystem;
+//using DG.Tweening;
 
 public class EnemyMover : MonoBehaviour
 {
@@ -69,6 +70,7 @@ public class EnemyMover : MonoBehaviour
 		if (_wandering)
 		{
 			_rb.velocity = ((Vector3)_targetPos - transform.position).normalized * _moveSpeed;
+			//transform.DOMove((Vector3)_targetPos, _moveSpeed);
 		}
 		else
 		{
