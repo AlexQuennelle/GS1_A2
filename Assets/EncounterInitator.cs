@@ -4,7 +4,6 @@ public class EncounterInitiator : MonoBehaviour
 {
 	[SerializeField]
 	private EnemyBase _enemy;
-	[SerializeField, Range(0, 1)]
 
 	private EncounterHandler _handler;
 
