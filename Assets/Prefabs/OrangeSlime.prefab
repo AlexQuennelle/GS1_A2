@@ -202,7 +202,7 @@ MonoBehaviour:
       m_RotationOrder: 4
     m_ConstantMin: 2
     m_ConstantMax: 3
-  _rb: {fileID: 0}
+  _rb: {fileID: 5409335430800884361}
 --- !u!1 &8866104182412241189
 GameObject:
   m_ObjectHideFlags: 0

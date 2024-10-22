@@ -13,7 +13,7 @@ public class SlimeMover : MonoBehaviour
 	[SerializeField]
 	private float _wanderRange = 3.0f;
 	[SerializeField]
-	private float _aggroRange = 5.0f;
+	private float _aggroRange = 2.0f;
 	[SerializeField]
 	private MinMaxCurve _behaviourPeriod = new MinMaxCurve(2.0f, 3.0f);
 	private float _behaviourChange;
