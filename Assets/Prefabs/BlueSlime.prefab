@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4858847450312684948}
   - component: {fileID: 4287765606382199032}
   - component: {fileID: 5409335430800884361}
-  - component: {fileID: 2720628920680559222}
+  - component: {fileID: 8768026645878302905}
   m_Layer: 0
   m_Name: BlueSlime
   m_TagString: Untagged
@@ -122,7 +122,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &2720628920680559222
+--- !u!114 &8768026645878302905
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -131,14 +131,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 7789956935568842244}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4c90bfda516f3c4e8acb99de502a332, type: 3}
+  m_Script: {fileID: 11500000, guid: 7c90002aefe0a8f4aa37d6d525d5982d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _player: {fileID: 0}
-  _moveSpeed: 1
-  _chaseSpeed: 2
+  _moveSpeed: 2
+  _chaseSpeed: 1
   _wanderRange: 3
-  _aggroRange: 2
+  _aggroRange: 5
   _behaviourPeriod:
     m_Mode: 3
     m_CurveMultiplier: 0
@@ -154,9 +154,9 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    m_ConstantMin: 1
+    m_ConstantMin: 2
     m_ConstantMax: 3
-  _rb: {fileID: 5409335430800884361}
+  _rb: {fileID: 0}
 --- !u!1 &8866104182412241189
 GameObject:
   m_ObjectHideFlags: 0
@@ -229,7 +229,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -639943139
-  m_SortingLayer: 8
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_Sprite: {fileID: -1042795669, guid: c748092ff00450d46b12e8c9f082d8f9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

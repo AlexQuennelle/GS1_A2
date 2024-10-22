@@ -1,20 +1,21 @@
 using UnityEngine;
 using static UnityEngine.ParticleSystem;
+using DG.Tweening; // DOTween Engine
 
-public class EnemyMover : MonoBehaviour
+public class SlimeMover : MonoBehaviour
 {
 	[SerializeField]
 	private Transform _player;
 	[SerializeField]
-	private float _moveSpeed = 1.0f;
+	private float _moveSpeed = 2.0f;
 	[SerializeField]
-	private float _chaseSpeed = 2.0f;
+	private float _chaseSpeed = 1.0f;
 	[SerializeField]
 	private float _wanderRange = 3.0f;
 	[SerializeField]
 	private float _aggroRange = 5.0f;
 	[SerializeField]
-	private MinMaxCurve _behaviourPeriod = new MinMaxCurve(0.0f, 1.0f);
+	private MinMaxCurve _behaviourPeriod = new MinMaxCurve(2.0f, 3.0f);
 	private float _behaviourChange;
 	private bool _wandering;
 
@@ -49,6 +50,7 @@ public class EnemyMover : MonoBehaviour
 
 	private void Chase()
 	{
+		DOTween.Kill(transform); // Kills the active Tween animation
 		_rb.velocity = (Vector2)(_player.position - transform.position).normalized * _chaseSpeed;
 		_behaviourChange = Time.time + _behaviourPeriod.constantMax;
 		_wandering = true;
@@ -68,7 +70,8 @@ public class EnemyMover : MonoBehaviour
 		}
 		if (_wandering)
 		{
-			_rb.velocity = ((Vector3)_targetPos - transform.position).normalized * _moveSpeed;
+			//_rb.velocity = ((Vector3)_targetPos - transform.position).normalized * _moveSpeed;
+			transform.DOMove((Vector3)_targetPos, _moveSpeed); // DOTween Animation
 		}
 		else
 		{
