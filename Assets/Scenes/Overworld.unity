@@ -54679,6 +54679,10 @@ PrefabInstance:
       propertyPath: _behaviourPeriod.m_ConstantMin
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4036674673528744615, guid: 3ad15a7728085174ebd3bb576ea54783, type: 3}
+      propertyPath: _player
+      value: 
+      objectReference: {fileID: 1137602449}
     - target: {fileID: 4893079077028035852, guid: 3ad15a7728085174ebd3bb576ea54783, type: 3}
       propertyPath: m_LocalPosition.x
       value: 15.54
@@ -111663,6 +111667,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1408792387944753599, guid: 24f94908ac0339746983b9a07e0cb976, type: 3}
+      propertyPath: _player
+      value: 
+      objectReference: {fileID: 1137602449}
     - target: {fileID: 4893079077028035852, guid: 24f94908ac0339746983b9a07e0cb976, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.74
