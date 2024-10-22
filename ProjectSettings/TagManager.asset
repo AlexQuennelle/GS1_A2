@@ -59,8 +59,14 @@ TagManager:
   - name: Wall
     uniqueID: 37827313
     locked: 0
+  - name: Projectile
+    uniqueID: 3564002577
+    locked: 0
   - name: Player
     uniqueID: 3655024157
+    locked: 0
+  - name: SporeCloud
+    uniqueID: 3533671885
     locked: 0
   - name: Front
     uniqueID: 3018943657

@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 701b317f48e23b54fab7bd80bd183f89, type: 3}
+  m_Name: Orange Slime
+  m_EditorClassIdentifier: 
+  _sprite: {fileID: -1143944472, guid: c748092ff00450d46b12e8c9f082d8f9, type: 3}
+  _animator: {fileID: 9100000, guid: 17dd292845e1a914d9364ebae75440a3, type: 2}
+  _hp: 3
+  _pattern: {fileID: 11400000, guid: 18eba21323bcae4449bcd9df97f1e40d, type: 2}
