@@ -19,6 +19,10 @@ public class EnemyMover : MonoBehaviour
 	private bool _wandering;
 
 	[SerializeField]
+	private float _easeDuration = 1.0f;
+	private float _behaviourLength;
+
+	[SerializeField]
 	private Rigidbody2D _rb;
 
 	private Vector2 _targetPos;
@@ -32,7 +36,9 @@ public class EnemyMover : MonoBehaviour
 	{
 		_startPos = transform.position;
 		PickWanderTarget();
-		_behaviourChange = Time.time + _behaviourPeriod.Evaluate(0, Random.value);
+		_wandering = (Random.value > 0.5f) ? true : false;
+		_behaviourLength = _behaviourPeriod.Evaluate(0, Random.value);
+		_behaviourChange = Time.time + _behaviourLength;
 	}
 
 	private void FixedUpdate()
@@ -59,7 +65,8 @@ public class EnemyMover : MonoBehaviour
 		if (Time.time >= _behaviourChange)
 		{
 			_wandering = !_wandering;
-			_behaviourChange = Time.time + _behaviourPeriod.Evaluate(0, Random.value);
+			_behaviourLength = _behaviourPeriod.Evaluate(0, Random.value);
+			_behaviourChange = Time.time + _behaviourLength;
 			PickWanderTarget();
 		}
 		if (Vector3.Distance(transform.position, _targetPos) < 0.01f)
@@ -68,12 +75,25 @@ public class EnemyMover : MonoBehaviour
 		}
 		if (_wandering)
 		{
-			_rb.velocity = ((Vector3)_targetPos - transform.position).normalized * _moveSpeed;
+			_rb.velocity = ((Vector3)_targetPos - transform.position).normalized * Ease(_moveSpeed);
 		}
 		else
 		{
 			_rb.velocity = Vector2.zero;
 		}
+	}
+
+	private float Ease(float speed)
+	{
+		float timeInState = _behaviourChange - Time.time;
+		float tIn = (timeInState >= _easeDuration) ? 1.0f : timeInState / _easeDuration;
+		float tOut = (timeInState <= _behaviourLength - _easeDuration) ?
+			0.0f :
+			(timeInState - (_behaviourLength - _easeDuration)) / _easeDuration;
+		float easeIn = Mathf.Lerp(0.0f, speed, tIn);
+		float easeOut = Mathf.Lerp(speed, 0.0f, tOut);
+
+		return Mathf.Lerp(easeIn, easeOut, timeInState / _behaviourLength);
 	}
 
 	private void PickWanderTarget()

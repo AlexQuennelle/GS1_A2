@@ -198,7 +198,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &1408792387944753599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -233,7 +233,8 @@ MonoBehaviour:
       m_RotationOrder: 4
     m_ConstantMin: 2
     m_ConstantMax: 3
-  _rb: {fileID: 5409335430800884361, guid: 2c97bcaa8f4c8c945af5f167d49c0322, type: 3}
+  _easeDuration: 1
+  _rb: {fileID: 5409335430800884361}
 --- !u!1 &8866104182412241189
 GameObject:
   m_ObjectHideFlags: 0
