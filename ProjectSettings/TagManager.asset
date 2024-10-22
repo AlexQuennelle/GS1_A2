@@ -53,6 +53,9 @@ TagManager:
   - name: Floor
     uniqueID: 3503281393
     locked: 0
+  - name: Particles
+    uniqueID: 3605755939
+    locked: 0
   - name: Wall
     uniqueID: 37827313
     locked: 0
@@ -61,4 +64,10 @@ TagManager:
     locked: 0
   - name: Front
     uniqueID: 3018943657
+    locked: 0
+  - name: Particles2
+    uniqueID: 2679854199
+    locked: 0
+  - name: Top
+    uniqueID: 3286917147
     locked: 0

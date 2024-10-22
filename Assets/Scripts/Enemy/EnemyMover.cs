@@ -8,6 +8,8 @@ public class EnemyMover : MonoBehaviour
 	[SerializeField]
 	private float _moveSpeed = 1.0f;
 	[SerializeField]
+	private float _chaseSpeed = 2.0f;
+	[SerializeField]
 	private float _wanderRange = 3.0f;
 	[SerializeField]
 	private float _aggroRange = 5.0f;
@@ -47,7 +49,7 @@ public class EnemyMover : MonoBehaviour
 
 	private void Chase()
 	{
-		_rb.velocity = (Vector2)(_player.position - transform.position).normalized * _moveSpeed;
+		_rb.velocity = (Vector2)(_player.position - transform.position).normalized * _chaseSpeed;
 		_behaviourChange = Time.time + _behaviourPeriod.constantMax;
 		_wandering = true;
 	}

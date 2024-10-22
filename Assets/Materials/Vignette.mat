@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: SpriteOutliner
-  m_Shader: {fileID: -6465566751694194690, guid: e9b4d7e10df51904396e3f15fc62918b, type: 3}
+  m_Name: Vignette
+  m_Shader: {fileID: -6465566751694194690, guid: ba087380def2e4f4ebaa16c084ef2eaf, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -27,11 +27,11 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 0}
+    - _Filter:
+        m_Texture: {fileID: 10300, guid: 0000000000000000f000000000000000, type: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _MainTexture:
+    - _MainTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -57,17 +57,17 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - CORNERS_ON: 0
     - _EnableExternalAlpha: 0
-    - _Flash: 0
-    - _OutlineThickness: 1
+    - _Intensity: -0.31
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _Size: 0.04
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _OutlineColor: {r: 0.4227483, g: 0.62292564, b: 0.9433962, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
---- !u!114 &4160330647982565813
+--- !u!114 &8098514162597785700
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
