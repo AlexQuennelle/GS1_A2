@@ -26,7 +26,6 @@ public class EncounterInitiator : MonoBehaviour
 	{
 		if (_handler == null)
 		{
-			Debug.LogWarning($"WARNING! No EncounterHandler found on {_handler.gameObject.name}.");
 			return;
 		}
 
