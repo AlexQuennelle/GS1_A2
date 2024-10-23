@@ -1,10 +1,18 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Windows;
 using Utility.Singleton;
+
+public struct DataStruct 
+{
+    public int id;
+    public int nextId;
+    public string dialogue;
+}
 
 public class DialogueManager : NoMonoSingleton<DialogueManager>
 {
-    private Dictionary<string, string> dialogueDictionary = new Dictionary<string, string>();
+    private Dictionary<int, DataStruct> dialogueDictionary = new Dictionary<int, DataStruct>();
 
     public void Initialize()
     {
@@ -21,7 +29,16 @@ public class DialogueManager : NoMonoSingleton<DialogueManager>
 
                     if (!string.IsNullOrEmpty(key))
                     {
-                        dialogueDictionary[key] = dialogueText;
+                        string[] parts = key.Split(',');
+                        int num1 = int.Parse(parts[0]);
+                        int num2 = int.Parse(parts[1]);
+                        DataStruct data = new DataStruct
+                        {
+                            id = num1,
+                            nextId = num2,
+                            dialogue = dialogueText
+                        };
+                        dialogueDictionary[num1] = data;
                     }
                 }
             }
@@ -34,18 +51,30 @@ public class DialogueManager : NoMonoSingleton<DialogueManager>
         }
     }
 
-    public void GetDialogue(string key)
+    public void BeginDialogue(int id)
     {
-        if (dialogueDictionary.TryGetValue(key, out string dialogueText))
+        if (dialogueDictionary.TryGetValue(id, out DataStruct data))
         {
             UIManager.Instance.ShowPanel<DialoguePanel>(PanelBase.PanelShowLayer.Front, PanelBase.Ani.Fade, dialoguePanel =>
             {
-                dialoguePanel.SetText(dialogueText);
+                dialoguePanel.SetData(data);
             });
         }
         else
         {
-            Debug.LogWarning("Dialogue with key '" + key + "' not found!");
+            Debug.LogWarning("Dialogue with key '" + id + "' not found!");
+        }
+    }
+
+    public DataStruct GetDialogue(int id)
+    {
+        if (dialogueDictionary.TryGetValue(id, out DataStruct data))
+        {
+            return data;
+        }
+        else
+        {
+            throw new KeyNotFoundException($"ID {id} not found in the dialogue dictionary.");
         }
     }
 }

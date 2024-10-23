@@ -13,6 +13,19 @@ MonoBehaviour:
   m_Name: Dialogue
   m_EditorClassIdentifier: 
   keys:
-  - Alpha1
+  - 1,2
+  - 2,3
+  - 3,4
+  - 4,5
+  - 5,0
+  - 6,7
+  - 7,8
+  - 8,0
   dialogues:
-  - asdfasdfas
+  - '"Oww.. that hurt."'
+  - '"..."'
+  - '"Where am I?"'
+  - '"I''m lost.."'
+  - '"A slime..?"'
+  - '"I have no choice but to fight it.."'
+  - '"Okay, here we go."'

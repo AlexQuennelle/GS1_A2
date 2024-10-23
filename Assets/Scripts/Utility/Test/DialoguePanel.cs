@@ -1,26 +1,36 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class DialoguePanel : PanelBase
 {
-    private Text text;
+    private Text textDialogue;
     private Button button_Close;
+    private DataStruct data;
+    private float typingSpeed;
 
     protected override void Init()
     {
+        typingSpeed = 0.1f;
+        textDialogue = GetController<Text>("Text_Dialogue");
         button_Close = GetController<Button>("Button_Close");
         button_Close.onClick.AddListener(CloseButtonClick);
+        SetText(data.dialogue);
+    }
+
+    public void SetData(DataStruct dataStruct)
+    {
+        data = dataStruct;
     }
 
     public void SetText(string dialogueText)
     {
-        text = GetController<Text>("Text_Dialogue");
-        if (text != null)
+        if (textDialogue != null)
         {
-            text.text = dialogueText;
+            StartCoroutine(TypeDialogue(dialogueText));
         }
         else
         {
@@ -30,7 +40,24 @@ public class DialoguePanel : PanelBase
 
     private void CloseButtonClick()
     {
-        UIManager.Instance.HidePanel<DialoguePanel>(PanelBase.Ani.Fade);
+        if (data.nextId == 0)
+        {
+            UIManager.Instance.HidePanel<DialoguePanel>(PanelBase.Ani.Fade);
+        } 
+        else
+        {
+            data = DialogueManager.Instance.GetDialogue(data.nextId);
+            SetText(data.dialogue);
+        }
     }
 
+    IEnumerator TypeDialogue(string fullText)
+    {
+        textDialogue.text = "";
+        foreach (char letter in fullText.ToCharArray())
+        {
+            textDialogue.text += letter;  // 将字母逐个添加到对话框
+            yield return new WaitForSeconds(typingSpeed);
+        }
+    }
 }

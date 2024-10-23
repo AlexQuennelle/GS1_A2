@@ -8,11 +8,11 @@ public class TestDialogue : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            DialogueManager.Instance.GetDialogue("Alpha1");
+            DialogueManager.Instance.BeginDialogue(1);
         }
         else if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            DialogueManager.Instance.GetDialogue("Alpha2");
+            DialogueManager.Instance.BeginDialogue(2);
         }
     }
 }
