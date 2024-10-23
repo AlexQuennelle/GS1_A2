@@ -48,7 +48,7 @@ MonoBehaviour:
   m_LightType: 1
   m_BlendStyleIndex: 1
   m_FalloffIntensity: 0.5
-  m_Color: {r: 0.01960784, g: 0.07752814, b: 0.20784314, a: 1}
+  m_Color: {r: 0.007843138, g: 0.13333334, b: 0.011764706, a: 1}
   m_Intensity: 0.3
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
@@ -980,7 +980,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1.5
+      scalar: 0.75
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -4961,7 +4961,7 @@ GameObject:
   - component: {fileID: 314952345167653139}
   - component: {fileID: 3145190819793279218}
   m_Layer: 0
-  m_Name: AttackOrb
+  m_Name: HealthOrb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5025,8 +5025,8 @@ SpriteRenderer:
   m_SortingLayerID: -1276023639
   m_SortingLayer: 10
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1381995218, guid: 96ed57b5697b83a41b288021e0ace0e1, type: 3}
-  m_Color: {r: 0.30196083, g: 0.76372975, b: 0.9529412, a: 1}
+  m_Sprite: {fileID: 1317742570, guid: 96ed57b5697b83a41b288021e0ace0e1, type: 3}
+  m_Color: {r: 0.46293163, g: 0.9716981, b: 0.4793967, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5046,7 +5046,7 @@ Animator:
   m_GameObject: {fileID: 2861078477607642322}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: cb3e4ac0603841d4d8d862056bf515bf, type: 2}
+  m_Controller: {fileID: 9100000, guid: 308b2eeb04702fa41a8eb59478903f94, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
