@@ -28,7 +28,7 @@ public class ProjectileSpawner : MonoBehaviour
 		_timerEnd = Time.time + _spawnDelay;
 		_enabled = true;
 	}
-	public void Diable()
+	public void Disable()
 	{
 		_enabled = false;
 	}

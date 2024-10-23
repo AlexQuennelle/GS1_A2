@@ -20,7 +20,7 @@ public class DamageEffect : MonoBehaviour
 	private void OnDamage(Health health, int dmg)
 	{
 		_sr.material.SetFloat("_Flash", 1.0f);
-		_flashCounter = 2;
+		_flashCounter = (int)(Mathf.Pow(Time.deltaTime, -1.0f) * ((2.0f / 3.0f) / 10.0f));
 	}
 
 	private void Update()

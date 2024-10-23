@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: FrogPattern
   m_EditorClassIdentifier: 
   _projectile: {fileID: 475317036913520157, guid: 7f040a93dee27784cb59afdb8c1f5c38, type: 3}
-  _spawnDelay: 2
+  _spawnDelay: 0.85
   _directions:
   - {x: 0, y: -1}

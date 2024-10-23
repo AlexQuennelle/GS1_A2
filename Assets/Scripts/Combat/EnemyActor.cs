@@ -43,7 +43,7 @@ public class EnemyActor : MonoBehaviour
 	public void DeInit()
 	{
 		_orbSpawner.DisableSpawning();
-		//_projectileSpawner.DisableSpawning();
+		_projectileSpawner.Disable();
 
 		_animator.runtimeAnimatorController = null;
 	}

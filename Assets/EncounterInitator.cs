@@ -4,7 +4,6 @@ public class EncounterInitiator : MonoBehaviour
 {
 	[SerializeField]
 	private EnemyBase _enemy;
-	[SerializeField, Range(0, 1)]
 
 	private EncounterHandler _handler;
 
@@ -27,7 +26,6 @@ public class EncounterInitiator : MonoBehaviour
 	{
 		if (_handler == null)
 		{
-			Debug.LogWarning($"WARNING! No EncounterHandler found on {_handler.gameObject.name}.");
 			return;
 		}
 
