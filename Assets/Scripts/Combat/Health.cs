@@ -11,7 +11,8 @@ public class Health : MonoBehaviour
 
 	public int HP { get { return _hp; } set { _hp = value; } }
 
-	public void TakeDamage(int dmg)
+
+    public void TakeDamage(int dmg)
 	{
 		_hp -= dmg;
 

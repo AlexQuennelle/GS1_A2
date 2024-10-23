@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.Windows;
 using Utility.Singleton;
 
-public struct DataStruct 
+public struct DataStruct
 {
     public int id;
     public int nextId;
@@ -55,7 +55,7 @@ public class DialogueManager : NoMonoSingleton<DialogueManager>
     {
         if (dialogueDictionary.TryGetValue(id, out DataStruct data))
         {
-            UIManager.Instance.ShowPanel<DialoguePanel>(PanelBase.PanelShowLayer.Front, PanelBase.Ani.Fade, dialoguePanel =>
+            UIManager.Instance.ShowPanel<DialoguePanel>(PanelBase.PanelShowLayer.Forefront, PanelBase.Ani.None, dialoguePanel =>
             {
                 dialoguePanel.SetData(data);
             });

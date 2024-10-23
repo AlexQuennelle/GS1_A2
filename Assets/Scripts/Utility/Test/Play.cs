@@ -6,7 +6,7 @@ public class Play : MonoBehaviour
 {
     void Start()
     {
-        UIManager.Instance.ShowPanel<StartPanel>(PanelBase.PanelShowLayer.Front, PanelBase.Ani.Fade);
+        UIManager.Instance.ShowPanel<StartPanel>(PanelBase.PanelShowLayer.Front);
         DialogueManager.Instance.Initialize();
     }
 }
