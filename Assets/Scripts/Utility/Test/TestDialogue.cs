@@ -10,9 +10,5 @@ public class TestDialogue : MonoBehaviour
         {
             DialogueManager.Instance.BeginDialogue(1);
         }
-        else if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            DialogueManager.Instance.BeginDialogue(2);
-        }
     }
 }

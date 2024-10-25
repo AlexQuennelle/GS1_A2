@@ -31,8 +31,6 @@ public class CombatPanel : PanelBase
         {
             hpPlayer.rectTransform.localScale = new Vector2((float)playerHealth.HP / 5, 1);
             hpEnemy.rectTransform.localScale = new Vector2((float)enemyHealth.HP / maxEnemyHealth, 1);
-            //Debug.Log("PlayerHealth:" + playerHealth.HP);
-            //Debug.Log((float)(playerHealth.HP / 5));
             yield return null;
         }
     }

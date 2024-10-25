@@ -19,7 +19,7 @@ MonoBehaviour:
   - 4,5
   - 5,0
   - 6,7
-  - 7,8
+  - 7,0
   - 8,0
   dialogues:
   - '"Oww.. that hurt."'
@@ -29,3 +29,4 @@ MonoBehaviour:
   - '"A slime..?"'
   - '"I have no choice but to fight it.."'
   - '"Okay, here we go."'
+  - '"Maybe I should hide and collect the blue stuff"'

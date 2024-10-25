@@ -1,7 +1,10 @@
+using System;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Utility.Singleton;
 
-public class GameManager : MonoBehaviour
+public class GameManager : MonoSingleton<GameManager>
 {
     [SerializeField, Header("Players")]
     private GameObject _player;
@@ -19,6 +22,8 @@ public class GameManager : MonoBehaviour
 
     [SerializeField]
     private GameState _gameState = GameState.Exploration;
+
+    private bool combatTrigger = true;
 
     private void OnEnable()
     {
@@ -50,14 +55,19 @@ public class GameManager : MonoBehaviour
     public void EnterCombat(EnemyBase baseEnemy)
     {
         if (_gameState != GameState.Exploration) return;
+        UIManager.Instance.ShowPanel<CombatPanel>(PanelBase.PanelShowLayer.Front, PanelBase.Ani.None, combatPanel =>
+        {
+            combatPanel.GetHealthData(_combatPlayer.GetComponent<Health>(), _enemyActor.GetComponent<Health>());
+        });
+        if (combatTrigger)
+        {
+            DialogueManager.Instance.BeginDialogue(8);
+            combatTrigger = false;
+        }       
         _gameState = GameState.Combat;
         _player.SetActive(false);
         _combatPlayer.SetActive(true);
         _enemyActor.Initialize(baseEnemy);
-        UIManager.Instance.ShowPanel<CombatPanel>(PanelBase.PanelShowLayer.Front, PanelBase.Ani.Fade, combatPanel =>
-        {
-            combatPanel.GetHealthData(_combatPlayer.GetComponent<Health>(), _enemyActor.GetComponent<Health>());
-        });
     }
     public void ExitCombat()
     {
@@ -69,6 +79,20 @@ public class GameManager : MonoBehaviour
         _combatPlayer.SetActive(false);
         _player.SetActive(true);
         UIManager.Instance.HidePanel<CombatPanel>(PanelBase.Ani.None);
+    }
+
+    public void Pause(bool pause)
+    {
+        if (_gameState == GameState.Exploration)
+        {
+            _player.GetComponent<PlayerMover>().MoveSpeed = pause ? 0.0f : 2.5f;
+        }
+        else if (_gameState == GameState.Combat)
+        {
+            _combatPlayer.GetComponent<PlayerMover>().enabled = !pause;
+            _combatPlayer.GetComponent<Health>().IsDialogue = pause;
+            _enemyActor.GetComponent<Health>().IsDialogue = pause;
+        }
     }
 
     //put encounter transition here

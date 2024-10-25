@@ -16,5 +16,6 @@ public class StartPanel : PanelBase
     private void StartButtonClick()
     {
         UIManager.Instance.HidePanel<StartPanel>(PanelBase.Ani.Fade);
+        DialogueManager.Instance.BeginDialogue(1);
     }
 }

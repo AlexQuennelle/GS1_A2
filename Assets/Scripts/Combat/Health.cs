@@ -5,15 +5,19 @@ public class Health : MonoBehaviour
 {
 	[SerializeField]
 	private int _hp = 5;
+	private bool _isDialogue = false;
 
 	public event Action<Health, int> OnDamage;
 	public event Action<Health> OnDeath;
 
 	public int HP { get { return _hp; } set { _hp = value; } }
+    public bool IsDialogue { get { return _isDialogue; } set { _isDialogue = value; } }
 
 
     public void TakeDamage(int dmg)
 	{
+		if (IsDialogue) return;
+
 		_hp -= dmg;
 
 		OnDamage?.Invoke(this, _hp);
