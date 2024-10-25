@@ -17,8 +17,8 @@ public class DialoguePanel : PanelBase
         typingSpeed = 0.1f;
         textDialogue = GetController<Text>("Text_Dialogue");
         button_Close = GetController<Button>("Button_Close");
-        button_Close.onClick.AddListener(CloseButtonClick);
         SetText(data.dialogue);
+        GameManager.Instance.Pause(true);
     }
 
     public void SetData(DataStruct dataStruct)
@@ -43,6 +43,7 @@ public class DialoguePanel : PanelBase
         if (data.nextId == 0)
         {
             UIManager.Instance.HidePanel<DialoguePanel>(PanelBase.Ani.Fade);
+            GameManager.Instance.Pause(false);
         } 
         else
         {
@@ -53,11 +54,16 @@ public class DialoguePanel : PanelBase
 
     IEnumerator TypeDialogue(string fullText)
     {
+        button_Close.onClick.AddListener(Test);
         textDialogue.text = "";
         foreach (char letter in fullText.ToCharArray())
         {
-            textDialogue.text += letter;  // 将字母逐个添加到对话框
+            textDialogue.text += letter; 
             yield return new WaitForSeconds(typingSpeed);
         }
+        button_Close.onClick.AddListener(CloseButtonClick);
     }
+
+    private void Test()
+    { }    
 }
