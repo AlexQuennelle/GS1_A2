@@ -111847,6 +111847,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: CombatArena
       objectReference: {fileID: 0}
+    - target: {fileID: 1771244082724247783, guid: 65423f0c358dd784182d24879a7b5b2b, type: 3}
+      propertyPath: m_SortingLayer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1771244082724247783, guid: 65423f0c358dd784182d24879a7b5b2b, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1615113097
+      objectReference: {fileID: 0}
+    - target: {fileID: 5619166139370691253, guid: 65423f0c358dd784182d24879a7b5b2b, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.a
+      value: 0.5372549
+      objectReference: {fileID: 0}
+    - target: {fileID: 5619166139370691253, guid: 65423f0c358dd784182d24879a7b5b2b, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.764151
+      objectReference: {fileID: 0}
+    - target: {fileID: 5619166139370691253, guid: 65423f0c358dd784182d24879a7b5b2b, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.5405635
+      objectReference: {fileID: 0}
+    - target: {fileID: 5619166139370691253, guid: 65423f0c358dd784182d24879a7b5b2b, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.44335175
+      objectReference: {fileID: 0}
     - target: {fileID: 5676694612937976908, guid: 65423f0c358dd784182d24879a7b5b2b, type: 3}
       propertyPath: m_Size.x
       value: 1.03125
@@ -111901,6 +111925,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6169406774010060260, guid: 65423f0c358dd784182d24879a7b5b2b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8004121469251215263, guid: 65423f0c358dd784182d24879a7b5b2b, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
