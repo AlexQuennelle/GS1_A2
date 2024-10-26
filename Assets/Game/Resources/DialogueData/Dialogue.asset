@@ -21,12 +21,26 @@ MonoBehaviour:
   - 6,7
   - 7,0
   - 8,0
+  - 9,10
+  - 10,0
+  - 11,0
+  - 12,13
+  - 13,0
+  - 14,15
+  - 15,0
   dialogues:
   - '"Oww.. that hurt."'
   - '"..."'
   - '"Where am I?"'
   - '"I''m lost.."'
   - '"A slime..?"'
-  - '"I have no choice but to fight it.."'
+  - '"There''s no other way around it.."'
   - '"Okay, here we go."'
-  - I need to fight back! Collect the blue orbs to hit the enemy!
+  - '"Collect the orbs around the screen!"'
+  - '"That was intense.."'
+  - '"Just gotta keep going."'
+  - '"Another one..?"'
+  - '"Something dangerous is up ahead.."'
+  - '"I need to be careful."'
+  - '"Uh oh. That''s a big monster.."'
+  - '"This is the only path out of this forest."'
