@@ -55,10 +55,10 @@ public class GameManager : MonoSingleton<GameManager>
     public void EnterCombat(EnemyBase baseEnemy)
     {
         if (_gameState != GameState.Exploration) return;
-        //UIManager.Instance.ShowPanel<CombatPanel>(PanelBase.PanelShowLayer.Front, PanelBase.Ani.None, combatPanel =>
-        //{
-        //    combatPanel.GetHealthData(_combatPlayer.GetComponent<Health>(), _enemyActor.GetComponent<Health>());
-        //});
+        UIManager.Instance.ShowPanel<CombatPanel>(PanelBase.PanelShowLayer.Front, PanelBase.Ani.None, combatPanel =>
+        {
+            combatPanel.GetHealthData(_combatPlayer.GetComponent<Health>(), _enemyActor.GetComponent<Health>());
+        });
         if (combatTrigger)
         {
             DialogueManager.Instance.BeginDialogue(8);
@@ -78,7 +78,7 @@ public class GameManager : MonoSingleton<GameManager>
 
         _combatPlayer.SetActive(false);
         _player.SetActive(true);
-        //UIManager.Instance.HidePanel<CombatPanel>(PanelBase.Ani.None);
+        UIManager.Instance.HidePanel<CombatPanel>(PanelBase.Ani.None);
     }
 
     public void Pause(bool pause)
