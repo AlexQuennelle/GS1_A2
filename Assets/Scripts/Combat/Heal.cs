@@ -1,10 +1,11 @@
+using System;
 using UnityEngine;
 
 public class Heal : MonoBehaviour
 {
 	[SerializeField]
 	private int _amount = 1;
-	public event Action<Damage> OnHeal;
+	public event Action<Heal> OnHeal;
 
 	private void OnTriggerEnter2D(Collider2D col)
 	{
