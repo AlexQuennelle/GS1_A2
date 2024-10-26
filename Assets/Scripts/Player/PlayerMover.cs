@@ -6,9 +6,9 @@ public class PlayerMover : MonoBehaviour
 	private float _moveSpeed = 2.5f;
 	private Rigidbody2D _rb;
 	public Vector2 Direction { get; set; }
-    public float MoveSpeed { get { return _moveSpeed; } set { _moveSpeed = value; } }
+	public float MoveSpeed { get { return _moveSpeed; } set { _moveSpeed = value; } }
 
-    private void OnEnable()
+	private void OnEnable()
 	{
 		_rb = GetComponent<Rigidbody2D>();
 	}

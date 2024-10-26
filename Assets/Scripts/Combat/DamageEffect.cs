@@ -10,17 +10,20 @@ public class DamageEffect : MonoBehaviour
 
 	private void OnEnable()
 	{
-		_health.OnDamage += OnDamage;
+		_health.OnHealthChange += OnDamage;
 	}
 	private void OnDisable()
 	{
-		_health.OnDamage -= OnDamage;
+		_health.OnHealthChange -= OnDamage;
 	}
 
-	private void OnDamage(Health health, int dmg)
+	private void OnDamage(Health health, int dmg, int type)
 	{
-		_sr.material.SetFloat("_Flash", 1.0f);
-		_flashCounter = (int)(Mathf.Pow(Time.deltaTime, -1.0f) * ((2.0f / 3.0f) / 10.0f));
+		if (type < 0)
+		{
+			_sr.material.SetFloat("_Flash", 1.0f);
+			_flashCounter = (int)(Mathf.Pow(Time.deltaTime, -1.0f) * ((2.0f / 3.0f) / 10.0f));
+		}
 	}
 
 	private void Update()
