@@ -24,6 +24,7 @@ public class GameManager : MonoSingleton<GameManager>
     private GameState _gameState = GameState.Exploration;
 
     private bool combatTrigger = true;
+    private int finishTrigger = 9;
 
     private void OnEnable()
     {
@@ -79,6 +80,11 @@ public class GameManager : MonoSingleton<GameManager>
         _combatPlayer.SetActive(false);
         _player.SetActive(true);
         UIManager.Instance.HidePanel<CombatPanel>(PanelBase.Ani.None);
+        if (finishTrigger == 9 || finishTrigger == 12)
+        {
+            DialogueManager.Instance.BeginDialogue(finishTrigger);
+            finishTrigger = 12;
+        }
     }
 
     public void Pause(bool pause)
