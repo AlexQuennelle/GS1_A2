@@ -53852,7 +53852,7 @@ GameObject:
   - component: {fileID: 584136540}
   - component: {fileID: 584136539}
   m_Layer: 0
-  m_Name: Trigger
+  m_Name: FirstEnc. Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -53866,13 +53866,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 584136537}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.06, y: 8.53, z: 0.060191534}
-  m_LocalScale: {x: 0.85328436, y: 2.5955937, z: 0.99411}
+  m_LocalRotation: {x: -0, y: -0, z: 0.08568884, w: 0.996322}
+  m_LocalPosition: {x: -0.82, y: 8.29, z: 0.060191534}
+  m_LocalScale: {x: 0.85328436, y: 3.2847238, z: 0.99411}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1247576179}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 9.831}
 --- !u!114 &584136539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53885,6 +53885,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94043b29798ce4b4fa219ee61cc356e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogueStart: 5
 --- !u!61 &584136540
 BoxCollider2D:
   m_ObjectHideFlags: 0

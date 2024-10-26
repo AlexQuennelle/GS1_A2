@@ -1,7 +1,4 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,12 +8,14 @@ public class DialoguePanel : PanelBase
     private Button button_Close;
     private DataStruct data;
     private float typingSpeed;
+    private bool isTyping;
 
     protected override void Init()
     {
         typingSpeed = 0.1f;
         textDialogue = GetController<Text>("Text_Dialogue");
         button_Close = GetController<Button>("Button_Close");
+        button_Close.onClick.AddListener(CloseButtonClick);
         SetText(data.dialogue);
         GameManager.Instance.Pause(true);
     }
@@ -40,30 +39,36 @@ public class DialoguePanel : PanelBase
 
     private void CloseButtonClick()
     {
-        if (data.nextId == 0)
+        if (isTyping)
         {
-            UIManager.Instance.HidePanel<DialoguePanel>(PanelBase.Ani.Fade);
-            GameManager.Instance.Pause(false);
-        } 
+            StopAllCoroutines();
+            textDialogue.text = data.dialogue;
+            isTyping = false;
+        }
         else
         {
-            data = DialogueManager.Instance.GetDialogue(data.nextId);
-            SetText(data.dialogue);
+            if (data.nextId == 0)
+            {
+                UIManager.Instance.HidePanel<DialoguePanel>(PanelBase.Ani.Fade);
+                GameManager.Instance.Pause(false);
+            }
+            else
+            {
+                data = DialogueManager.Instance.GetDialogue(data.nextId);
+                SetText(data.dialogue);
+            }
         }
     }
 
     IEnumerator TypeDialogue(string fullText)
     {
-        button_Close.onClick.AddListener(Test);
         textDialogue.text = "";
+        isTyping = true;
         foreach (char letter in fullText.ToCharArray())
         {
-            textDialogue.text += letter; 
+            textDialogue.text += letter;
             yield return new WaitForSeconds(typingSpeed);
         }
-        button_Close.onClick.AddListener(CloseButtonClick);
+        isTyping = false;
     }
-
-    private void Test()
-    { }    
 }
