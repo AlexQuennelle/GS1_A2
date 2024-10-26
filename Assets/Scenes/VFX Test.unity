@@ -40068,6 +40068,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HitFX
       objectReference: {fileID: 0}
+    - target: {fileID: 5697307933645483111, guid: f0f4cc7de262dc14dab349515970bfdf, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

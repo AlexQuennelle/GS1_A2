@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 389d3ded8fe5a9e4188078e3e1d64b65, type: 3}
   m_Name: SporeCloud
   m_EditorClassIdentifier: 
-  _projectile: {fileID: 3916032547542395862, guid: 27a5828625c780040994c4773ba7cb9f, type: 3}
+  _projectile: {fileID: 475317036913520157, guid: 2e03059b8a8ae454a9f23be67345758b, type: 3}
   _spawnDelay: 4
   _directions: []
