@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: SpriteOutliner
+  m_Name: OverworldOutline
   m_Shader: {fileID: -6465566751694194690, guid: e9b4d7e10df51904396e3f15fc62918b, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -60,11 +60,11 @@ Material:
     - CORNERS_ON: 0
     - _EnableExternalAlpha: 0
     - _Flash: 0
-    - _OutlineThickness: 0.5
+    - _OutlineThickness: 0.75
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _OutlineColor: {r: 0.4227483, g: 0.62292564, b: 0.9433962, a: 1}
+    - _OutlineColor: {r: 0, g: 0.16160797, b: 0.35686275, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &4160330647982565813

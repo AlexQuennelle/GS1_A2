@@ -80,10 +80,15 @@ public class GameManager : MonoSingleton<GameManager>
         _combatPlayer.SetActive(false);
         _player.SetActive(true);
         UIManager.Instance.HidePanel<CombatPanel>(PanelBase.Ani.None);
-        if (finishTrigger == 9 || finishTrigger == 12)
+        if (finishTrigger == 9 || finishTrigger == 12 || finishTrigger == 16)
         {
             DialogueManager.Instance.BeginDialogue(finishTrigger);
-            finishTrigger = 12;
+            if (finishTrigger == 12)
+            {
+                finishTrigger = 16;
+            } else {
+                finishTrigger = 12;
+            }
         }
     }
 

@@ -28,6 +28,7 @@ MonoBehaviour:
   - 13,0
   - 14,15
   - 15,0
+  - 16,0
   dialogues:
   - '"Oww.. that hurt."'
   - '"..."'
@@ -44,3 +45,4 @@ MonoBehaviour:
   - '"I need to be careful."'
   - '"Uh oh. That''s a big monster.."'
   - '"This is the only path out of this forest."'
+  - '"Finally! I can leave this forest!'
