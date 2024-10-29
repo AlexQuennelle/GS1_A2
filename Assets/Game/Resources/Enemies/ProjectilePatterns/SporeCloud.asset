@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: SporeCloud
   m_EditorClassIdentifier: 
   _projectile: {fileID: 475317036913520157, guid: 2e03059b8a8ae454a9f23be67345758b, type: 3}
-  _spawnDelay: 4
+  _spawnDelay: 1.25
   _directions:
   - {x: 0, y: -1}
