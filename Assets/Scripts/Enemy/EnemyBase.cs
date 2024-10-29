@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Enemy", menuName = "OverStory/New Enemy")]
@@ -10,10 +11,12 @@ public class EnemyBase : ScriptableObject
 	[SerializeField]
 	private int _hp = 1;
 	[SerializeField]
-	private ProjectilePatternBase _pattern;
+	private List<ProjectilePatternBase> _patterns;
+	//private ProjectilePatternBase _pattern;
 
 	public Sprite BaseSprite => _sprite;
 	public RuntimeAnimatorController Animator => _animator;
-	public ProjectilePatternBase Pattern => _pattern;
+	public List<ProjectilePatternBase> Patterns => _patterns;
+	//public ProjectilePatternBase Pattern => _pattern;
 	public int HP => _hp;
 }
