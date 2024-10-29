@@ -151,8 +151,6 @@ public class UIManager : MonoSingleton<UIManager>
 
         GameObject eventSystem = new GameObject("EventSystem");
 
-        DontDestroyOnLoad(eventSystem);
-
         eventSystem.AddComponent<EventSystem>();
         eventSystem.AddComponent<StandaloneInputModule>();
     }
@@ -169,9 +167,8 @@ public class UIManager : MonoSingleton<UIManager>
             return existingPanel;
         }
 
-        Debug.Log(PanelObjPath + panelName);
         GameObject panel = Instantiate(Resources.Load<GameObject>(PanelObjPath + panelName));
-
+        Debug.Log(panel.name);
         Transform parent = null;
         switch (layer)
         {
@@ -194,7 +191,6 @@ public class UIManager : MonoSingleton<UIManager>
 
         panel.transform.SetParent(transform, false);
         panel.transform.SetParent(parent);
-
         T panelT = panel.GetComponent<T>();
         panelDic.Add(panelName, panelT);
 

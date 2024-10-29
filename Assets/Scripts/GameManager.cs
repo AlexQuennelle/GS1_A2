@@ -120,8 +120,9 @@ public class GameManager : MonoSingleton<GameManager>
 	//put game over screen here
 	private void Defeat(Health health)
 	{
-		SceneManager.LoadScene(0);
-	}
+        UIManager.Instance.HidePanel<CombatPanel>(PanelBase.Ani.None);	
+        SceneManager.LoadScene(0);
+    }
 	#endregion
 }
 
