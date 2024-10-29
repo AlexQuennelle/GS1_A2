@@ -15,4 +15,5 @@ MonoBehaviour:
   _sprite: {fileID: -1143944472, guid: c748092ff00450d46b12e8c9f082d8f9, type: 3}
   _animator: {fileID: 9100000, guid: 17dd292845e1a914d9364ebae75440a3, type: 2}
   _hp: 3
-  _pattern: {fileID: 11400000, guid: 18eba21323bcae4449bcd9df97f1e40d, type: 2}
+  _patterns:
+  - {fileID: 11400000, guid: 18eba21323bcae4449bcd9df97f1e40d, type: 2}
