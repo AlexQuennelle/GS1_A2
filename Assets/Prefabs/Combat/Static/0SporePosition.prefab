@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -4811834228561545636}
   - component: {fileID: 4894439661550152514}
   m_Layer: 8
-  m_Name: SporePosition
+  m_Name: 0SporePosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
