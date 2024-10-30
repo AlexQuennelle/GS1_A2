@@ -9797,7 +9797,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5899198751267063080}
   - component: {fileID: 3998724232411572838}
-  - component: {fileID: 1432956138078908574}
+  - component: {fileID: 1517289532905454811}
   - component: {fileID: 3015307264451483699}
   - component: {fileID: -974948705133628820}
   m_Layer: 0
@@ -9851,7 +9851,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1432956138078908574
+--- !u!114 &1517289532905454811
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9864,8 +9864,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _damagePerTick: 1
-  _tickLength: 1
-  _area: {fileID: 0}
+  _tickLength: 0
+  _area: {fileID: 5678296190454789509}
 --- !u!114 &3015307264451483699
 MonoBehaviour:
   m_ObjectHideFlags: 0
