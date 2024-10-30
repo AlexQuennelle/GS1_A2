@@ -78,7 +78,6 @@ public class GameManager : MonoSingleton<GameManager>
         _combatPlayer.SetActive(false);
         _player.SetActive(true);
         UIManager.Instance.HidePanel<CombatPanel>(PanelBase.Ani.None);
-        Debug.Log("After Combat :" + finishTrigger);
         if (finishTrigger != 0)
             DialogueManager.Instance.BeginDialogue(finishTrigger);
     }

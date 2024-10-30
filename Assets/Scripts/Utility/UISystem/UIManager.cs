@@ -168,7 +168,6 @@ public class UIManager : MonoSingleton<UIManager>
         }
 
         GameObject panel = Instantiate(Resources.Load<GameObject>(PanelObjPath + panelName));
-        Debug.Log(panel.name);
         Transform parent = null;
         switch (layer)
         {
