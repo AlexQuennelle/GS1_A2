@@ -6,9 +6,13 @@ public class TriggerPlayer : MonoBehaviour
 {
     [SerializeField]
     private int dialogueStart;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        DialogueManager.Instance.BeginDialogue(dialogueStart);
-        gameObject.SetActive(false);
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            DialogueManager.Instance.BeginDialogue(dialogueStart);
+            gameObject.SetActive(false);
+        }
     }
 }
