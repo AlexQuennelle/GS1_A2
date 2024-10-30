@@ -76,7 +76,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _damagePerTick: 1
-  _tickLength: 0.5
+  _tickLength: 1
   _area: {fileID: 5678296190454789509}
 --- !u!114 &3015307264451483699
 MonoBehaviour:
