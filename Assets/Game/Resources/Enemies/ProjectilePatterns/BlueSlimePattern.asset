@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 389d3ded8fe5a9e4188078e3e1d64b65, type: 3}
   m_Name: BlueSlimePattern
   m_EditorClassIdentifier: 
-  _projectile: {fileID: 475317036913520157, guid: 9981e05d78f383c4b98dcba68f27f694, type: 3}
-  _spawnDelay: 0.2
+  _projectile: {fileID: 475317036913520157, guid: 8c3abb18a9274c441a82a8888c01e68a, type: 3}
+  _spawnDelay: 0.5
   _directions:
   - {x: 0, y: -1}
