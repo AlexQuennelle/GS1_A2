@@ -4958,8 +4958,8 @@ GameObject:
   - component: {fileID: 3193122211514749880}
   - component: {fileID: 9128111642317917939}
   - component: {fileID: 3168216784153620596}
-  - component: {fileID: 314952345167653139}
   - component: {fileID: 3145190819793279218}
+  - component: {fileID: -1314426739154702456}
   m_Layer: 0
   m_Name: HealthOrb
   m_TagString: Untagged
@@ -5119,20 +5119,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &314952345167653139
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2861078477607642322}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bbc063e52b0588c47ae140107ddac9bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _target: {fileID: 6892601241383371099, guid: e26647434974abd4495d4d4a30ff8e0c, type: 3}
-  _damage: 1
 --- !u!114 &3145190819793279218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5162,3 +5148,16 @@ MonoBehaviour:
       m_RotationOrder: 4
     m_ConstantMin: 1
     m_ConstantMax: 5
+--- !u!114 &-1314426739154702456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2861078477607642322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 459e5ea340ff26142be13e0641c24ff3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _amount: 1
