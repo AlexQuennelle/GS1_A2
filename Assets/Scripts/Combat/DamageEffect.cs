@@ -1,7 +1,11 @@
 using UnityEngine;
 
-public class DamageEffect : MonoBehaviour
+public class HealthEffect : MonoBehaviour
 {
+	[SerializeField]
+	private GameObject _damageVFX;
+	[SerializeField]
+	private GameObject _healVFX;
 	[SerializeField]
 	private Health _health;
 	[SerializeField]
@@ -10,19 +14,33 @@ public class DamageEffect : MonoBehaviour
 
 	private void OnEnable()
 	{
-		_health.OnHealthChange += OnDamage;
+		_health.OnHealthChange += OnHealthChange;
 	}
 	private void OnDisable()
 	{
-		_health.OnHealthChange -= OnDamage;
+		_health.OnHealthChange -= OnHealthChange;
 	}
 
-	private void OnDamage(Health health, int dmg, int type)
+	private void OnHealthChange(Health health, int dmg, int type)
 	{
 		if (type < 0)
 		{
 			_sr.material.SetFloat("_Flash", 1.0f);
 			_flashCounter = (int)(Mathf.Pow(Time.deltaTime, -1.0f) * ((2.0f / 3.0f) / 10.0f));
+			if (_damageVFX != null)
+			{
+				if (_damageVFX.TryGetComponent<ParticleSystem>(out ParticleSystem effect))
+				{
+					effect.Play();
+				}
+			}
+		}
+		if (type > 0 && _healVFX != null)
+		{
+			if (_healVFX.TryGetComponent<ParticleSystem>(out ParticleSystem effect))
+			{
+				effect.Play();
+			}
 		}
 	}
 
