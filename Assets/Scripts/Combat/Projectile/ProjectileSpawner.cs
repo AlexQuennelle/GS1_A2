@@ -43,7 +43,7 @@ public class ProjectileSpawner : MonoBehaviour
 
 	private void Update()
 	{
-		if (_patterns == null) return;
+		if (_patterns == null || !_enabled) return;
 		foreach (ProjectilePattern pattern in _patterns)
 		{
 			if (pattern.CanSpawn)

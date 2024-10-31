@@ -8,7 +8,9 @@ public class OrbSpawner : MonoBehaviour
 	private Transform _corner2;
 
 	[SerializeField]
-	private GameObject _orb;
+	private GameObject _damageOrb;
+	[SerializeField]
+	private GameObject _healOrb;
 
 	[SerializeField]
 	private float _spawnDelay = 2.0f;
@@ -34,14 +36,10 @@ public class OrbSpawner : MonoBehaviour
 		{
 			_timerEnd = Time.time + _spawnDelay;
 
-			Vector3 pos = new Vector3
-				(
-					Mathf.Lerp(_corner1.position.x, _corner2.position.x, Random.value),
-					Mathf.Lerp(_corner1.position.y, _corner2.position.y, Random.value),
-					0.0f
-				);
-			GameObject go = GameObject.Instantiate(_orb, pos, Quaternion.identity);
-			if (go.TryGetComponent<DamageTarget>(out DamageTarget dt)) dt.Target = GetComponent<Health>();
+			GameObject dgo = GameObject.Instantiate(_damageOrb, RandomPos(), Quaternion.identity);
+			GameObject hgo = GameObject.Instantiate(_healOrb, RandomPos(), Quaternion.identity);
+			if (dgo.TryGetComponent<DamageTarget>(out DamageTarget dt)) dt.Target = GetComponent<Health>();
 		}
 	}
+	private Vector3 RandomPos() => new Vector3(Mathf.Lerp(_corner1.position.x, _corner2.position.x, Random.value), Mathf.Lerp(_corner1.position.y, _corner2.position.y, Random.value), 0.0f);
 }
