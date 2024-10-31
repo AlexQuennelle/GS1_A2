@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _sprite: {fileID: -1042795669, guid: c748092ff00450d46b12e8c9f082d8f9, type: 3}
   _animator: {fileID: 9100000, guid: 6173385b6245d2547b9c5fc9b2d58f35, type: 2}
-  _hp: 6
+  _hp: 24
   _patterns:
   - {fileID: 11400000, guid: 64be0c3c9a2491747b246cb03877365b, type: 2}

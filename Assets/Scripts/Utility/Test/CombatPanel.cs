@@ -9,13 +9,11 @@ public class CombatPanel : PanelBase
     private Health playerHealth;
     private Health enemyHealth;
     private int maxEnemyHealth;
-    private int maxPlayerHealth;
 
     protected override void Init()
     {
         hpPlayer = GetController<Image>("hpPlayer");
         hpEnemy = GetController<Image>("hpEnemy");
-        maxPlayerHealth = playerHealth.HP;
         maxEnemyHealth = enemyHealth.HP;
         hpEnemy.rectTransform.localScale = new Vector2(1, 1);
         StartCoroutine(ExecuteEveryFrame());
@@ -31,7 +29,7 @@ public class CombatPanel : PanelBase
     {
         while (true)
         {
-            hpPlayer.rectTransform.localScale = new Vector2((float)playerHealth.HP / maxPlayerHealth, 1);
+            hpPlayer.rectTransform.localScale = new Vector2((float)playerHealth.HP / 20, 1);
             hpEnemy.rectTransform.localScale = new Vector2((float)enemyHealth.HP / maxEnemyHealth, 1);
             yield return null;
         }
