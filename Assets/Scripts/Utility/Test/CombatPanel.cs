@@ -29,7 +29,7 @@ public class CombatPanel : PanelBase
     {
         while (true)
         {
-            hpPlayer.rectTransform.localScale = new Vector2((float)playerHealth.HP / 20, 1);
+            hpPlayer.rectTransform.localScale = new Vector2((float)playerHealth.HP / 15, 1);
             hpEnemy.rectTransform.localScale = new Vector2((float)enemyHealth.HP / maxEnemyHealth, 1);
             yield return null;
         }

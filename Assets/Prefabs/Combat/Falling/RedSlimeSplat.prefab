@@ -75,7 +75,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d15609fd019fd954c8eca0329faeb512, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _damagePerTick: 1
+  _damagePerTick: 2
   _tickLength: 0.5
   _area: {fileID: 8683295089075119655}
 --- !u!114 &262065458419703813

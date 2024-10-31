@@ -5,6 +5,7 @@ public class Health : MonoBehaviour
 {
 	[SerializeField]
 	private int _hp = 5;
+	[SerializeField]
 	private int _maxHp = 5;
 	private bool _isDialogue = false;
 

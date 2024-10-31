@@ -37,6 +37,7 @@ public class OrbSpawner : MonoBehaviour
 	{
 		if (Time.time >= _timerEnd && _enabled)
 		{
+			CleanOrbs();
 			_timerEnd = Time.time + _spawnDelay;
 
 			GameObject dgo = GameObject.Instantiate(_damageOrb, RandomPos(), Quaternion.identity);
