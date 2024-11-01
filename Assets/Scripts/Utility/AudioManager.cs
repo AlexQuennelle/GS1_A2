@@ -12,6 +12,7 @@ public class AudioManager : MonoSingleton<AudioManager>
     public AudioSource combat_Boss; 
     public AudioSource attackSound;
     public AudioSource healSound;
+    public AudioSource hitEnemy;
     public AudioSource killEnemy;
 
     private bool pause = false;
@@ -61,11 +62,10 @@ public class AudioManager : MonoSingleton<AudioManager>
     public void PauseCombatBossSound() => combat_Boss?.Pause();
 
     public void PlayHitSound() => attackSound?.Play();
-    public void PauseHitSound() => attackSound?.Pause();
 
     public void PlayHealSound() => healSound?.Play();
-    public void PauseHealSound() => healSound?.Pause();
+
+    public void PlayhitEnemy() => hitEnemy?.Play();
 
     public void PlaykillEnemy() => killEnemy?.Play();
-    public void PausekillEnemy() => killEnemy?.Pause();
 }

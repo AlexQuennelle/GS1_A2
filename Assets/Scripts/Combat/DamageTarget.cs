@@ -16,6 +16,7 @@ public class DamageTarget : MonoBehaviour
 	{
 		_target.TakeDamage(_damage);
         AudioManager.Instance.PlayHitSound();
+		AudioManager.Instance.PlayhitEnemy();
         OnDamage?.Invoke(this);
 	}
 }
