@@ -78,6 +78,9 @@ public class GameManager : MonoSingleton<GameManager>
         _combatPlayer.SetActive(false);
         _player.SetActive(true);
         UIManager.Instance.HidePanel<CombatPanel>(PanelBase.Ani.None);
+        AudioManager.Instance.PauseCombatBossSound();
+        AudioManager.Instance.PauseCombatSmallSound();
+        AudioManager.Instance.PlayExploreSound();
         if (finishTrigger != 0)
             DialogueManager.Instance.BeginDialogue(finishTrigger);
     }
@@ -106,6 +109,7 @@ public class GameManager : MonoSingleton<GameManager>
     //put victory screen here
     private void Victory(Health health)
     {
+        AudioManager.Instance.PlaykillEnemy();
         ExitCombat();
     }
     //put game over screen here

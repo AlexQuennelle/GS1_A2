@@ -15,6 +15,7 @@ public class DamageTarget : MonoBehaviour
 	private void OnTriggerEnter2D(Collider2D col)
 	{
 		_target.TakeDamage(_damage);
-		OnDamage?.Invoke(this);
+        AudioManager.Instance.PlayHitSound();
+        OnDamage?.Invoke(this);
 	}
 }

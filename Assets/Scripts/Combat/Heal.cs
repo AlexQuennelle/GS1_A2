@@ -13,6 +13,7 @@ public class Heal : MonoBehaviour
 		if (!col.gameObject.TryGetComponent<Health>(out Health health)) return;
 
 		OnHeal?.Invoke(this);
-		health.Heal(_amount);
+		AudioManager.Instance.PlayHealSound();
+        health.Heal(_amount);
 	}
 }

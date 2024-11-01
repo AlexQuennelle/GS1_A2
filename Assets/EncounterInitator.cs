@@ -16,14 +16,21 @@ public class EncounterInitiator : MonoBehaviour
 
 		if (!col.CompareTag("Player"))
 			return;
-		if (gameObject.name == "TutorialSlime")
-			GameManager.Instance.finishTrigger = 9;
-		else if (gameObject.name == "BlueSlime")
-			GameManager.Instance.finishTrigger = 12;
-		else if (gameObject.name == "FrogBoss")
-			GameManager.Instance.finishTrigger = 16;
-		else
-            GameManager.Instance.finishTrigger = 0;     
+        AudioManager.Instance.PauseExploreSound();
+		if (gameObject.name == "TutorialSlime") {
+            AudioManager.Instance.PlayCombatSmallSound();
+            GameManager.Instance.finishTrigger = 9;
+        } else if (gameObject.name == "BlueSlime") {
+            AudioManager.Instance.PlayCombatSmallSound();
+            GameManager.Instance.finishTrigger = 12;
+        } else if (gameObject.name == "FrogBoss") {
+			AudioManager.Instance.PlayCombatBossSound();
+            GameManager.Instance.finishTrigger = 16;
+        } else {
+            AudioManager.Instance.PlayCombatSmallSound();
+            GameManager.Instance.finishTrigger = 0;
+        }
+                
     }
 	private void OnTriggerExit2D(Collider2D col)
 	{
