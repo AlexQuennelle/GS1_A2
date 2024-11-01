@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Utility.Singleton;
+using System.Collections;
 
 public class GameManager : MonoSingleton<GameManager>
 {
@@ -73,7 +74,6 @@ public class GameManager : MonoSingleton<GameManager>
     {
         if (_gameState != GameState.Combat) return;
         _gameState = GameState.Exploration;
-
         _enemyActor.DeInit();
         _combatPlayer.SetActive(false);
         _player.SetActive(true);
@@ -110,7 +110,7 @@ public class GameManager : MonoSingleton<GameManager>
     private void Victory(Health health)
     {
         AudioManager.Instance.PlaykillEnemy();
-        ExitCombat();
+        StartCoroutine(HandleExitCombatCoroutine());
     }
     //put game over screen here
     private void Defeat(Health health)
@@ -118,6 +118,14 @@ public class GameManager : MonoSingleton<GameManager>
         UIManager.Instance.HidePanel<CombatPanel>(PanelBase.Ani.None);
         SceneManager.LoadScene(0);
     }
+
+    private IEnumerator HandleExitCombatCoroutine()
+    {
+        BattleTransitionAnim.Instance.ExitCombat();
+        yield return new WaitForSeconds(0.75f);
+        ExitCombat();
+    }
+
     #endregion
 }
 

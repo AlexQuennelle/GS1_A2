@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using System.Collections;
 
 public class EncounterHandler : MonoBehaviour
 {
@@ -7,6 +8,13 @@ public class EncounterHandler : MonoBehaviour
 
 	public void HandleEncounter(EnemyBase baseEnemy)
 	{
-		OnEncounter?.Invoke(this, baseEnemy);
+        StartCoroutine(HandleEncounterCoroutine(baseEnemy));
 	}
+
+    private IEnumerator HandleEncounterCoroutine(EnemyBase baseEnemy)
+    {
+        BattleTransitionAnim.Instance.EnterCombat();
+        yield return new WaitForSeconds(1.5f);
+        OnEncounter?.Invoke(this, baseEnemy);
+    }
 }
