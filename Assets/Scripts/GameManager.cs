@@ -122,7 +122,7 @@ public class GameManager : MonoSingleton<GameManager>
     private IEnumerator HandleExitCombatCoroutine()
     {
         BattleTransitionAnim.Instance.ExitCombat();
-        yield return new WaitForSeconds(0.75f);
+        yield return new WaitForSeconds(0.85f);
         ExitCombat();
     }
 
